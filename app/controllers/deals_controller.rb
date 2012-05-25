@@ -3,7 +3,7 @@ class DealsController < ApplicationController
   before_filter :set_view_paths, only: :show
 
   def index
-    @deals = Deal.all
+    @deals = Deal.with_advertisers
   end
 
   def show

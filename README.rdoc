@@ -3,6 +3,8 @@ This is a Ruby 1.9, Rails 3.2 application.
 If you have Ruby 1.9 and bundler installed, all you should need to do is:
 
 bundle
+rake db:create
+rake db:migrate
 rake db:seed
 rails s
 
