@@ -12,4 +12,8 @@ class DealTest < ActiveSupport::TestCase
   	sleep 1
   	assert deal.over?, "Deal should be over"
   end
+  
+  test "with_advertisers scope should include advertisers and publishers" do
+    assert_equal [{:advertiser=>[:publisher]}], Deal.with_advertisers.includes_values
+  end
 end

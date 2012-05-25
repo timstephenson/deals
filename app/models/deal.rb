@@ -1,6 +1,10 @@
 class Deal < ActiveRecord::Base
   belongs_to :advertiser
-
+  
+  # Scopes ===========================================================================
+  scope :with_advertisers, includes([:advertiser => [:publisher]])
+  
+  # Valications ======================================================================
   validates_presence_of :advertiser, :value, :price, :description, :start_at, :end_at
 
   def over?
