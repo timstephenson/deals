@@ -7,9 +7,8 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-
   <%= stylesheet_link_tag    "bootstrap", :media => "all" %>
-  <%= stylesheet_link_tag    "entertainment-new-york/assets/stylesheets/deals", :media => "all" %>
+  <%= stylesheet_link_tag    "entertainment/assets/stylesheets/deals", :media => "all" %>
 
   <script type="text/javascript">
     var aaDealPath = '<%= deal_path @deal, :format => "json" %>';
@@ -29,36 +28,28 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="#">Entertainment New York Deal of the Day</a>
+        <a class="brand" href="#"><%= entertainment_deal_description(@deal.advertiser_publisher_name) %></a>
       </div>
     </div>
   </div>
 
     <div class="container">
-      <% if flash[:warn].present? %>
+      
+      <% flash.each do |name, msg| %>
       <div class="row">
         <div class="span16">
-          <div class="alert-message warning">
-            <p><%= flash[:warn] %></p>
+          <div class="alert alert-<%= name == :notice ? "success" : "warning" %>">
+            <a class="close" data-dismiss="alert">×</a>
+            <%= msg %>
           </div>
         </div>
       </div>
       <% end %>
-
-      <% if flash[:notice].present? %>
-      <div class="row">
-        <div class="span16">
-          <div class="alert-message success">
-            <p><%= flash[:notice] %></p>
-          </div>
-        </div>
-      </div>
-      <% end %>
-
+      
 <%= yield %>
 
       <footer>
-        <p>Entertainment New York Deal of the Day</p>
+        <p><%= entertainment_deal_description(@deal.advertiser_publisher_name) %></p>
       </footer>
 
     </div> <!-- /container -->

@@ -14,4 +14,16 @@ class PublisherTest < ActiveSupport::TestCase
 
     publisher.save!
   end
+  
+  test "should set theme to entertainment" do
+    publisher = Factory(:publisher)
+    publisher.theme = "entertainment-boston"
+    assert_equal "entertainment", publisher.entertainment_or_default_theme
+  end
+  
+  test "should return default theme value" do
+    publisher = Factory(:publisher)
+    publisher.theme = "some-theme-boston"
+    assert_equal "some-theme-boston", publisher.entertainment_or_default_theme
+  end
 end
