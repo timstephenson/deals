@@ -1,0 +1,74 @@
+#analog_analytics_content div, 
+#analog_analytics_content span, 
+#analog_analytics_content object, 
+#analog_analytics_content iframe, 
+#analog_analytics_content h1, 
+#analog_analytics_content h2, 
+#analog_analytics_content h3, 
+#analog_analytics_content h4, 
+#analog_analytics_content h5, 
+#analog_analytics_content h6, 
+#analog_analytics_content p, 
+#analog_analytics_content blockquote, 
+#analog_analytics_content pre, 
+#analog_analytics_content a, 
+#analog_analytics_content abbr, 
+#analog_analytics_content acronym, 
+#analog_analytics_content address, 
+#analog_analytics_content code, 
+#analog_analytics_content del, 
+#analog_analytics_content dfn, 
+#analog_analytics_content em, 
+#analog_analytics_content img, 
+#analog_analytics_content q, 
+#analog_analytics_content dl, 
+#analog_analytics_content dt, 
+#analog_analytics_content dd, 
+#analog_analytics_content ol, 
+#analog_analytics_content ul, 
+#analog_analytics_content li, 
+#analog_analytics_content fieldset, 
+#analog_analytics_content form, 
+#analog_analytics_content label, 
+#analog_analytics_content legend, 
+#analog_analytics_content table, 
+#analog_analytics_content caption, 
+#analog_analytics_content tbody, 
+#analog_analytics_content tfoot, 
+#analog_analytics_content thead, 
+#analog_analytics_content tr, 
+#analog_analytics_content th, 
+#analog_analytics_content td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+#analog_analytics_content table { border-collapse: separate; border-spacing: 0; }
+
+#analog_analytics_content caption,
+#analog_analytics_content th,
+#analog_analytics_content td { text-align: left; font-weight: normal; }
+
+#analog_analytics_content table,
+#analog_analytics_content td,
+#analog_analytics_content th { vertical-align: middle; }
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+#analog_analytics_content blockquote:before,
+#analog_analytics_content blockquote:after,
+#analog_analytics_content q:before,
+#analog_analytics_content q:after { content: ""; }
+
+#analog_analytics_content blockquote, q { quotes: "" ""; }
+
+/* Remove annoying border on linked images. */
+#analog_analytics_content a img { border: none; }
+

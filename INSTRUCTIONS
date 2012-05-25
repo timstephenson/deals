@@ -1,0 +1,24 @@
+INSTRUCTIONS
+
+We have a small sample Rails application with a list of development stories we'd like you to complete. The purpose of the exercise is to learn how you work and approach common development tasks. Please complete these stories within three days. We don't expect you to work eight hours a day on this over the three days. It should only take a few hours.
+
+Please create a local git repository for the project and then craft a git commit for each story. The idea here is to be as realistic as possible. When you are done, gzip the repository and email it to glenn.veil@analoganalytics.com. Be sure the git repository is included and that the logs are deleted. We'll be evaluating the final product and the commits.
+
+This project has some intentional inconsistencies and issues in an attempt to make it realistic. Do your best to write code that is consistent with the existing code and Ruby best practices. Treat it like a real project.
+
+STORIES
+
+1.The admin Deals page (/deals) is really slow in production where we have 1000s of deals. Our front end designers are trying to decide if we just need pagination or a search interface. But right now, we just need the page to be faster—it times out in production sometimes. Profile the page for performance and fix any significant problems. Let's get the page to load more quickly. 
+
+2. We have a separate theme for each Entertainment publisher—Boston, New York, Chicago, etc.—but the themes are almost exact duplicates. DRY-up our themes. Update our themed Deal page code to use ONE theme in app/themes/entertainment for all the Entertainment publishers, but keep the customized parts in place. In other words, it should still say "Boston" for Boston, and "Chicago" for Chicago after we refactor to share just a single set of templates.
+
+3.DealTest fails for some developers some of the time. We need to fix this so that we can trust our tests. Take a look at the test as see if you can improve it to make it more reliable. 
+	
+4. We have a new Publisher, The Daily Planet, coming onboard. They would like to migrate from their old deal site. They have lots of existing data. They have exported their data into script/data/daily_planet.txt. Write a Rake task to import the data. We've done this before, and we'll need to use it again, so spend a little extra time to make it re-usable and higher quality than a down-and-dirty import script.
+
+You can direct any questions to:
+
+Glenn Veil
+360.487.6360
+glenn.veil@analoganalytics.com
+Skype: glenn.veil 

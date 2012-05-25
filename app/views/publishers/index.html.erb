@@ -1,0 +1,17 @@
+<h1>Publishers</h1>
+
+<table class="publishers table table-striped">
+  <thead>
+    <th>Name</th>
+    <th>Label</th>
+    <th/>
+    <th/>
+  </thead>
+  <tbody>
+<%= render @publishers.sort_by(&:name) %>
+  </tbody>
+</table>
+
+<p>
+  <%= link_to "New Publisher", new_publisher_path %>
+</p>

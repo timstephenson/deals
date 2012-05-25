@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @deal.proposition %></h1>
+
+<h2>$<%= @deal.value %> Value for Only $<%= @deal.price %></h2>
+
+<h3>Deal ends at <%= @deal.end_at.to_s(:long) %></h3>
+
+<p>
+  <%= @deal.description %>
+</p>
+
+<h3>Only <span class="inventory"><%= @deal.inventory %></span> Left</h3>

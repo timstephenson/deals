@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WCAX: <%= @deal.proposition %></title>
+ 
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+
+  <%= stylesheet_link_tag    "scoped_reset", :media => "all" %>
+  <%= stylesheet_link_tag    "wcax/assets/stylesheets/deals", :media => "all" %>
+
+  <script type="text/javascript">
+    var aaDealPath = '<%= deal_path @deal, :format => "json" %>';
+  </script>
+
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tag %>
+
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+  <div id="container">
+    <div class="wrap">
+      <!-- ::: Start Header ::: -->
+      <div id="header">
+        <h1 id="logo">
+            <a href="/publishers/wcax-vermont/deal-of-the-day">Jump On It</a>
+        </h1>
+        
+        <div id="nav">
+          <ul>
+            <li><a href="http://www.myjumponit.com">Home</a></li>
+            <li><a href="http://myjumponit.com/business.html">Businesses</a></li>
+            <li><a href="/publishers/1647/daily_deals/faqs">Faq</a></li>
+            <li><a href="http://myjumponit.com/contact.html">Contact</a></li>
+            <li><a href="http://www.vermontopia.com">Vermontopia.com</a></li>
+          </ul>           
+          <div class="ribbon ribbon-topleft"></div>
+          <div class="black_block"></div>         
+          <div class="ribbon ribbon-topright"></div>          
+        </div><!-- end nav -->      
+      </div>
+      <br>
+      <!-- ::: End Header ::: --> <!-- ::: Start Main ::: -->
+      <div id="main">
+        <div id="home-top">
+          <!--Analog_Analytics_Daily_Deal-->
+          <div id="analog_analytics">
+            <div id="daily_deal">
+              <div id="dd_content">
+                <div id="flash">
+                  <div class="warn" id="flash_warn" style="display: none;"></div>
+                  <div class="notice" id="flash_notice" style="display: none;"></div>
+                </div>
+
+                <div id="deal_page_left_column">
+                  <div id="daily_deal_container" class="daily_deal_box">
+                    <div id="dd_nav">
+                      <ul>
+                        <li><a href="/publishers/wcax-vermont/deal-of-the-day">Today's Deal</a></li>
+                        <li><a href="/publishers/wcax-vermont/daily_deals?per_page=6">All Deals</a></li> 
+                        <li><a href="/publishers/wcax-vermont/daily_deals/past">Past Deals</a></li>
+                        <li><a href="/publishers/1647/daily_deal/login">Sign In</a></li>
+                        <li class="last sign_up_btn"><a href="#signup" onclick="SignUpClick()">Sign Up</a></li>
+                      </ul>
+                    </div><!-- END #dd_nav -->
+
+<%= yield %>
+
+                    <div id="footer">
+                      <div id="footer-bar">
+                        <div id="footer-nav">
+                          <ul>
+                            <li class="active"><a href="http://www.myjumponit.com">Home</a></li>
+                            <li><a href="http://myjumponit.com/business.html">Businesses</a></li>
+                            <li><a href="/publishers/1647/daily_deals/faqs">Faq</a></li>
+                            <li><a href="http://myjumponit.com/contact.html">Contact</a></li>
+                          </ul>               
+                        </div>
+
+                        <div id="footer-copyright">Copyright © 2012. All Rights Reserved.</div>
+                        <div class="ribbon ribbon-bottomleft"></div>            
+                        <div class="ribbon ribbon-bottomright"></div>           
+                      </div>
+                    </div>
+                    <!-- ::: End Footer ::: -->     
+                    <div id="a_a">
+                      <a href="http://analoganalytics.com/"><%= image_tag "powered_by_analog_analytics.png" %></a>
+                    </div>
+                  </div><!-- end wrap -->
+                </div>
+              </div><!--dd_content-->
+            </div><!--daily_deal-->
+          </div><!--analog_analytics-->
+        </div><!-- end home-top -->
+        <div id="home-bottom">
+          <div class="clear"></div>
+          <div id="home-socials">
+            <a href="https://www.facebook.com/pages/Jumpon-It/150082911671022" title="Like Us on Facebook"><%= image_tag "wcax/assets/images/jumponit/icon_facebook.png" %></a>
+          </div>
+          <div class="clear"></div>
+        </div><!-- end home-bottom -->
+      </div>
+      <!-- ::: End Main ::: -->
+    </div><!-- end wrap -->
+  </div>
+                           
+</body>
+</html>

@@ -1,0 +1,15 @@
+<h1>Publisher: <%= @publisher.name %></h1>
+
+<%= form_for(@publisher) do |f| %>
+  <label>Name</label>
+  <%= f.text_field :name %>
+
+  <label>Theme</label>
+  <%= f.text_field :theme %>
+
+  <!-- Moved to Deal? Don't think we still need this. SW: Jun 3, 2008 -->
+  <!-- <label>City</label> -->
+  <%#= f.text_field :city %>
+
+  <%= f.submit %>
+<% end %>

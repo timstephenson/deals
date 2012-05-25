@@ -1,0 +1,4 @@
+Merchant  Date  Ends  Deal  Price Value 
+Burger King 10/2/2011 10/4/2011 Your way  25  50
+McDonalds 10/5/2011   Not really food 22  44
+Arbys 10/8/2011 10/10/2011  More burgers  7 14

@@ -1,0 +1,75 @@
+<div id="daily_deal_content_box">
+  <h1><%= @deal.proposition %></h1>
+  <div class="dd_right_panel">
+    <img src="http://s3.amazonaws.com/photos.daily-deals.analoganalytics.com/development/59762/standard.png"/>
+    <div id="dd_about_the_deal">
+      <h5>About The Deal</h5>
+      <%= @deal.description.try :html_safe %>
+    </div><!-- END #dd_about_the_deal -->
+  </div><!-- END .dd_right_panel -->
+
+  <div class="dd_left_panel">
+    <div id="dd_buy_box">
+      <div id="buy_now">
+        <% if @deal.sold_out? %>
+        <div id="sold_out" class="dd_button">
+          Sold Out
+        </div>
+        <% elsif @deal.over? %>
+        <div id="dd_price">
+        $<%= @deal.price %>
+        </div>
+        <div id="deal_over" class="dd_button">
+          Over
+        </div>
+        <% else %>
+        <div id="dd_price">
+        $<%= @deal.price %>
+        </div>
+        <a id="buy_now_button" class="dd_button" href="#" name="buy_now_button">Buy</a>
+        <div id="deal_over" class="dd_button unavailable" style="display:none;">
+          Over
+        </div>
+        <% end %>
+      </div><!-- END #buy_now -->
+    </div><!-- END #dd_buy_box -->
+    <div id="deal_dashboard">
+      <div id="dashboard_top">
+        <div class="dashboard_value">
+          <p>Value</p>
+          <span class="dash_value dashboard_bold">$<%= @deal.value %></span>
+        </div>
+        <div class="dashboard_value">
+          <p>Discount</p>
+          <span class="dash_value dashboard_bold"><%= number_to_percentage(@deal.savings_as_percentage, :precision => 0) %></span>
+        </div>
+        <div class="dashboard_value last_value">
+          <p>You Save</p>
+          <span class="dash_value dashboard_bold">$<%= @deal.savings %></span>
+        </div>
+      </div><!-- END #dashboard_top -->
+      <div id="timer">
+        <div id="time_left_to_buy">
+          Only <span class="inventory"><%= @deal.inventory %></span> Left
+        </div>
+      </div><!-- END #dashboard_bottom -->
+    </div><!-- END #deal_dashboard -->
+    <div class="dd_share_panel">
+      <h4>Share This Deal</h4>
+      <div class="share_link_wrap">
+        <a href="/daily_deals/59762/facebook?referral_code=" class="share_link share_link_facebook" id="facebook_link" onclick="return facebook_popup('/daily_deals/59762/facebook?referral_code=&popup=true')" target="_blank" title="Share coupon on Facebook"><span>Share this Daily Deal on Facebook!</span></a>
+        <a href="http://localhost:3000/daily_deals/59762/twitter" class="share_link share_link_twitter" target="_blank"><span>Share this Daily Deal on Twitter</span></a>
+        <a href="mailto:?subject=Jumponit Vermont: $80 Classic or German Brew Tour  from Burlington Brew Tours for $40&amp;body=Check out this deal at http://localhost:3000/publishers/wcax-vermont/daily_deals/59762" class="share_link share_link_mail"><span>Email this Daily Deal to your Friends!</span></a>
+      </div><!-- END .share_link_wrap -->
+    </div><!-- END .dd_share_panel-->
+    <a id="get_yours_free_btn" href="#">Get Yours FREE!<span class="small_arrow"></span></a>
+    <p class="get_your_free_text">When 4 of your friends buy this deal you get your money back!*</p>
+    <a id="get_your_free_details" href="#SeeDetails">See Details</a>
+    <div id="get_free_details_text">
+      <p>After you purchase your great myjumponit deal, you'll be given a unique web link that you can share with your friends. If four of your friends buy, your deal is free! Refund can only be earned once per deal. Shipping Not Included.</p>
+    </div><!-- END #get_free_details_copy -->
+  </div><!-- END .dd_left_panel -->
+
+  <div id="side_deals" class="side_deal_box">
+  </div><!-- END #side_deals -->
+</div>

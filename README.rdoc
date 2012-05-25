@@ -1,0 +1,14 @@
+This is a Ruby 1.9, Rails 3.2 application.
+
+If you have Ruby 1.9 and bundler installed, all you should need to do is:
+
+bundle
+rake db:seed
+rails s
+
+Use 'rake' to run tests.
+
+This is a very simple deal site. Actually _buying_ the deals is for the next version ;). Each Publisher (white-label site) has Advertisers (merchants, retailers, stores), and the Advertisers have Deals. The admin interface is at / (no security!). An example of a deal is at /deals/1 (if you ran db:seed). Some Publishers have custom templates and assets in app/themes. Publishers can be have a simple parent-child hierarchal relationship.
+
+Questions?
+dev@analoganalytics.com

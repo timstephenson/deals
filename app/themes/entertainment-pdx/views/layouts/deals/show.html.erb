@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @deal.proposition %></title>
+ 
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+
+  <%= stylesheet_link_tag    "bootstrap", :media => "all" %>
+  <%= stylesheet_link_tag    "entertainment-pdx/assets/stylesheets/deals", :media => "all" %>
+
+  <script type="text/javascript">
+    var aaDealPath = '<%= deal_path @deal, :format => "json" %>';
+  </script>
+
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tag %>
+
+</head>
+
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#">Entertainment Portland Deal of the Day</a>
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+      <% if flash[:warn].present? %>
+      <div class="row">
+        <div class="span16">
+          <div class="alert-message warning">
+            <p><%= flash[:warn] %></p>
+          </div>
+        </div>
+      </div>
+      <% end %>
+
+      <% if flash[:notice].present? %>
+      <div class="row">
+        <div class="span16">
+          <div class="alert-message success">
+            <p><%= flash[:notice] %></p>
+          </div>
+        </div>
+      </div>
+      <% end %>
+
+<%= yield %>
+
+      <footer>
+        <p>Entertainment Portland Deal of the Day</p>
+      </footer>
+
+    </div> <!-- /container -->
+</body>
+</html>

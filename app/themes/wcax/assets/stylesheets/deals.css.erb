@@ -1,0 +1,3671 @@
+/* Type */
+body { font: 0.74em Arial, Helvetica, sans-serif; line-height: 1.5em; background: #fff; color: #454545; }
+
+a {
+  color: #999999;
+  background: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #C3593C;
+  background: inherit;
+}
+
+a#what-is-cvv {
+    position: relative;
+    bottom: 3px;
+    left: 3px;
+    font-size: 0.9em;
+}
+
+h1 {
+  font: bold 2em Arial, Helvetica, sans-serif;
+  letter-spacing: -1px;
+  padding: 2px 0 0 0px;
+  margin: 0;
+  color: #464548;
+  background: inherit;
+}
+
+h1 a, h2 a {
+  text-decoration: none;
+  color: #464548;
+  background: inherit;
+}
+
+h1 a:hover, h2 a:hover {
+  color: #C3593C;
+  background: #FFF;
+}
+
+h2 {
+  margin: 12px 0 4px 0;
+  padding: 0;
+  font: bold 1.2em Arial, Helvetica, sans-serif;
+  color: rgb(7, 89, 165);
+  background: inherit;
+}
+
+h3 {
+  margin: 12px 0 4px 0;
+  padding: 0;
+  font: bold 1em Arial, Helvetica, sans-serif;
+  color: rgb(7, 89, 165);
+  background: inherit;
+}
+
+/* Functional elements */
+body {
+  width: 945px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  padding-top: 10px;
+  float: left;
+}
+
+.navbar {
+  padding-top: 10px;
+  float: right;
+}
+
+ul.navbar {
+  list-style: none;
+  line-height: 37px;
+}
+
+ul.navbar li {
+  padding-left: 8px;
+  padding-right: 8px;
+  display: inline;
+}
+
+.navbar a, .navbar #login_status {
+  font-size: 10px;
+}
+
+.navbar #login_status {
+  padding-right: 48px;
+  color: #999999;
+}
+
+img.rule {
+  display: block;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  margin-right: 0;
+  float: none;
+  clear: both;
+}
+
+.warn {
+  padding-top: 8px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+}
+
+.notice {
+  padding-bottom: 8px;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+}
+
+.error {
+  padding-bottom: 8px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+}
+
+.copyright {
+  color: rgb(112, 112, 112);
+  font-size: 9px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.top_margin {
+  margin-top: 16px;
+}
+
+/* Tables */
+table {
+  border-bottom: 1px solid #999;
+  width: 100%;
+}
+
+th {
+  font-weight: bold;
+  border-bottom: 1px solid #999;
+  white-space: nowrap;
+}
+
+th, td {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  vertical-align: bottom;
+}
+
+td.check {
+  text-align: center;
+}
+
+tr.odd {
+  background: rgb(245, 245, 245);
+}
+
+td.last {
+  padding-left: 32px;
+  text-align: right;
+}
+
+.left_column {
+  float: left;
+  width: 700px;
+}
+
+.left_column p {
+  margin-bottom: 10px;
+}
+
+th.right, td.right {
+  text-align: right;
+}
+
+th.center, td.center {
+  text-align: center;
+}
+
+div.right {
+  text-align: right;
+}
+
+th.noborder, td.noborder {
+  border: none;
+}
+
+th.nopadding, td.nopadding {
+  padding: 0;
+}
+
+th.parent {
+  border: none;
+}
+
+th.borderright, td.borderright {
+  border-right: 1px solid #ddd;
+}
+
+
+/* buttons */
+div.buttons {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  text-align: right;
+  clear: both;
+  float: left;
+  width: 100%;
+}
+
+div.full_width {
+  width: 100%;
+}
+
+div.buttons input {
+  float: right;
+}
+
+div.buttons .left {
+  float: left;
+}
+
+.buttons .edit_email_template {
+  padding-left: 24px;
+}
+
+/* Form layout */
+input {
+  vertical-align: middle;
+}
+
+div.row {
+  margin-top: 8px;
+  text-align: right;
+  width: 700px;
+  float: left;
+  clear: both;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.row.check_box, div.row.radio_button {
+  text-align: left;
+  padding-left: 200px;
+  line-height: 16px;
+  vertical-align: top;
+  font-size: 12px;
+  float: left;
+}
+
+div.row.check_box + div.row.check_box,
+div.row.radio_button + div.row.radio_button {
+  margin-top: 6px;
+}
+
+div.row.left {
+  text-align: left;
+}
+
+div.label {
+  float: left;
+  width: 196px;
+  padding-right: 4px;
+  text-align: right;
+  vertical-align: middle;
+  line-height: 2em;
+}
+
+div.input {
+  float: left;
+  width: 300px;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+div.input.check_box_list input[type="checkbox"] {
+  vertical-align: middle;
+  float: none;
+}
+
+div.input label {
+  font-weight: normal;
+}
+
+div.input .scrollable_check_boxes {
+  height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #DDD;
+  padding: 5px;
+}
+
+div.input .scrollable_check_boxes div {
+  border-bottom: 1px dashed #DDD;
+}
+
+div.input .scrollable_check_boxes div:last-child {
+  border: none;
+}
+
+div.input .scrollable_check_boxes input[type="checkbox"] {
+  vertical-align: middle;
+  float: none;
+}
+
+label {
+  padding-right: 4px;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+div.row.check_box label,
+div.row.radio_button label {
+  font-weight: normal;
+  line-height: 15px;
+  height: 15px;
+  font-size: 12px;
+  vertical-align: middle;
+  display: block;
+}
+
+div.input input[type="text"], div.input input[type="password"], div.input textarea {
+  width: 100%;
+}
+
+.date .input input[type="text"] {
+  float: left;
+  width: 274px;
+}
+
+.date .input .calendar_date_select_popup_icon {
+  margin-top: 4px;
+  float: right;
+}
+
+div.row input[type="checkbox"], div.row input[type="radio"] {
+  vertical-align: middle;
+  margin-right: 4px;
+  float: left;
+}
+
+.help {
+  padding-left: 16px;
+  width: 184px;
+  float: left;
+  font-style: italic;
+  color: rgb(153, 153, 153);
+  vertical-align: middle;
+  line-height: 1em;
+}
+
+.help:first-line {
+  line-height: 2em;
+}
+
+.help_function {
+  cursor: pointer;
+}
+
+.tooltip {
+  font-style: italic;
+  color: #0568ab;
+  font-size: 90%;
+  background: transparent url(/images/question_12.png) no-repeat scroll left center;
+  float: right;
+  width: 12px;
+}
+
+div.row p {
+  padding-left: 200px;
+}
+
+div.row.left p {
+  padding-left: 0px;
+}
+
+p.delete_link {
+  padding-left: 200px;
+}
+
+.row .input p.delete_link {
+  padding-left: 0px;
+}
+
+div.row p.edit_link {
+  padding-left: 0px;
+}
+
+div.row ul {
+  margin-left: 24px;
+}
+
+.errorExplanation li {
+  margin-left: 32px;
+}
+
+.fieldWithErrors {
+  text-align: right;
+}
+
+.fieldWithErrors input[type="text"],
+.fieldWithErrors input[type="password"] {
+  border-color: red;
+}
+
+img.thumbnail {
+  border: 1px dotted rgb(205, 205, 205);
+}
+
+.submitted {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px;
+}
+
+div.content {
+  text-align: left;
+}
+
+ul.https-hosts {
+    list-style: none;
+    margin-top: 1em;
+}
+
+ul.https-hosts li a.delete {
+    color: red;
+}
+
+div.related {
+  float: left;
+  margin-left: 24px;
+  margin-bottom: 18px;
+}
+
+.related ul {
+  list-style: none;
+}
+
+.related ul .test_link {
+  vertical-align: text-top;  
+}
+
+.related > h3 {
+  font-size: 18px;
+}
+
+div.related.refund div#refund-form-container {
+    background-color: #EFEFEF;
+    padding: 15px 20px;
+    border: 1px solid #DFDFD8;
+}
+
+div#affiliates_preview, div#affiliate_deals_preview {
+    width: 220px;
+}
+
+div#affiliates_preview ul.affiliate-deals li, div#affiliate_deals_preview ul.affiliate-deals li {
+    margin-bottom: 10px;
+}
+
+div#affiliates_preview ul#affiliate-placements li a.delete-ap {
+    color: red;
+}
+
+div#affiliates_preview form#add-affiliate-placement {
+    margin-top: 10px;
+}
+
+form#search-for-affiliate-deals input#search_text {
+    width: 250px;
+}
+
+.test_link {
+  padding-right: 8px;
+}
+
+a.test_link img {
+  vertical-align: text-top;  
+}
+
+table.advertisers input {
+  width: auto;
+}
+
+/* Offers */
+dl {
+  padding-left: 204px;
+}
+
+dt {
+  display: inline;
+  float: left;
+  font: normal normal bold 1em/1.5em Arial, Helvetica, sans-serif;
+  margin-left: -204px;
+  padding-top: 6px;
+  text-align: right;
+  width: 200px;
+}
+
+dd {
+  font: normal normal normal 1em/1.5em Arial, Helvetica, sans-serif;
+  padding-top: 6px;
+}
+
+form.randomize_password_user p {
+  font-size: 3em;
+  text-align: center;
+}
+
+form.randomize_password_user .email {
+  margin-top: 1.5em;
+}
+
+form.randomize_password_user .password {
+  margin-top: 1em;
+}
+
+form.randomize_password_user .button {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+form.randomize_password_user #reset_password_button {
+  width: auto;
+}
+
+table td.check {
+  width: 1%;
+  vertical-align: top;
+}
+
+table td.edit {
+  vertical-align: top;
+}
+
+input.submit {
+  width: auto;
+}
+
+table.publishers td.label {
+  white-space: nowrap;  
+}
+
+tr.headline td {
+  padding-top: 16px;
+  border-width: 0 0 1px; 
+  border-style: solid;
+  border-color: #999999;
+}
+
+/* Publishers */
+table.publishers a {
+  color: rgb(69, 69, 69);
+}
+
+table.publishers a:hover {
+  color: #C3593C;
+}
+
+table.publishers th.public_pages {
+  width: 180px;
+  padding-left: 48px;
+}
+
+table.publishers th.associations {
+  width: 180px;
+  padding-left: 48px;
+}
+
+table.publishers th.name {
+  min-width: 240px;
+  width: 240px;
+}
+
+table.publishers td.name {
+  min-width: 240px;
+  width: 240px;
+}
+
+table.publishers td.unique_subscribers_count {
+  padding-left: 24px;
+}
+
+table.publishers td.public_coupons {
+  padding-left: 24px;
+}
+
+table.publishers td.public_coupons,
+table.publishers td.public_daily_deal {
+  width: 60px;
+}
+
+table.publishers td.advertisers {
+  padding-left: 48px;
+}
+
+table.publishers td.advertisers,
+table.publishers td.daily_deals {
+  width: 60px;
+}
+
+table.publishers td.users {
+  width: 40px;
+}
+
+table.publishers th.edit,
+table.publishers td.edit {
+  padding-left: 48px;
+}
+
+div.row.publishers {
+  margin-bottom: 8px;
+  width: 945px;
+}
+
+div.row.publishers div.label {
+  width: 320px;
+}
+
+p.search_message {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* Advertisers */
+.preview .wrapper {
+  margin-bottom: 16px;
+  width: 210px;
+}
+
+.preview .coupon, .preview .certificate, .preview .daily_deal, .preview .savings_as_percentage {
+  margin-bottom: 8px;
+  border: 1px solid rgb(205, 205, 205);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.preview .coupon .logo, .preview .certificate .logo, .preview .daily_deal .logo {
+  padding-top: 0px;
+  float: none;
+}
+
+.preview .body {
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  overflow: hidden;
+}
+
+.preview .coupon h3, .preview .certificate h3, .preview .daily_deal h3 {
+  clear: both;
+  margin-top: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(224, 51, 0);
+}
+
+.preview .summary_message {
+  font-weight: bold;
+}
+
+.preview .price {
+  margin-top: 4px;
+}
+
+.preview .footer {
+  margin-top: 8px;
+}
+
+.preview .footer div {
+  float: left;
+}
+
+.preview .footer .dates {
+  width: 70%;
+  color: black;
+}
+
+.preview .footer .edit {
+  text-align: right;
+  width: 30%;
+  font-size: 12px;
+  line-height: inherit;
+}
+
+.preview .daily_deal .footer .edit {
+  text-align: left;
+}
+
+.preview .header p {
+  float: left;
+}
+
+.preview .header .short_code {
+  font-size: 12px;
+  line-height: inherit;
+  text-align: left;
+  width: 30%;
+}
+
+.preview .header .code {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: inherit;
+  text-align: left;
+  width: 70%;
+}
+
+.preview .header .keyword {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: inherit;
+  text-align: right;
+  width: 70%;
+}
+
+.preview .header .credit {
+  font-size: 12px;
+  line-height: inherit;
+  text-align: right;
+  width: 30%;
+}
+
+.preview .text .message {
+  margin: 6px 0;
+}
+
+#crumbs {
+  margin: 12px 0 18px;
+}
+
+#character_count {
+  margin-top: 8px;
+  padding-left: 0;
+}
+
+#character_count.overflow {
+  color: red;
+  font-weight: bold;
+}
+
+.full_width.buttons a {
+  margin-right: 18px;
+}
+
+.signup_notice {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  float: left;
+  padding: 18px;
+  border: 2px solid rgb(100, 187, 80);
+  background-color: rgb(208, 253, 200);
+  width: 464px;
+}
+
+.signup_notice h2 {
+  color: rgb(60, 60, 60);
+  margin: 0 0 8px;
+}
+
+.signup_notice input {
+  margin-top: 8px;
+  float: right;
+}
+
+/* Images */
+.images_controls .will_paginate {
+  width: 545px;
+  float: left;
+}
+
+.images_controls .page_size {
+  width: 400px;
+  float: left;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.clear {
+  clear: both;
+}
+
+.images {
+  margin-top: 16px;
+  float: left;
+}
+
+table.images + .images_controls {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  float: left;
+  clear: both;
+}
+
+#subscription_rate_schedule .left {
+  float: left;
+}
+
+#subscription_rate_schedule .right {
+  float: right;
+}
+
+#subscription_rate_schedule .large {
+  font-size: 140%;
+  line-height: 140%;
+  margin-bottom: 2em;
+}
+
+.subscription_rate {
+  width: 440px;
+  border: 8px solid #eef;
+  margin-bottom: 24px;
+}
+
+.subscription_rate h1 {
+  background-color: #eef;
+  color: #555;
+  padding: 12px;
+  text-align: center;
+}
+
+.subscription_rate .content {
+  padding: 12px;
+}
+
+.subscription_rate ul.description {
+  font-size: 14px;
+  list-style-image:none;
+  list-style-position:outside;
+  list-style-type:none;
+  margin-bottom: 18px;
+}
+
+.subscription_rate ul.description li:before {
+  display: marker;
+  content: url(/themes/standard/images/check.png);
+  vertical-align: -10px;
+}
+
+.consumers {
+  margin-top: 12px;
+}
+
+.consumers td.name a,
+.consumers td.login a,
+.consumers td.publisher a {
+  color: #454545;
+}
+
+.consumers .name, .consumers .activated_at, .consumers .created_at {
+  white-space: nowrap;
+}
+
+.daily_deals td.advertiser {
+  width: 200px;
+}
+
+.daily_deals td.advertiser a,
+.daily_deals td.advertiser a:link {
+  color: rgb(69, 69, 69);
+}
+
+.admin_daily_deal_purchases td.date,
+.admin_daily_deal_purchases th.date,
+.daily_deals td.date,
+.daily_deals th.date {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.category_list {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+
+.category_list li {
+  margin: 3px;
+  line-height: 1;
+}
+
+.category_list span {
+  padding:6px;
+  display: block;
+  float: left;
+  width: 250px;
+  border: 1px solid #DDD;
+}
+
+.category_list a {
+  border-style: solid;
+  border-color: #DDD;
+  border-width: 1px 0 1px 1px;
+  font-weight: bold;
+  padding: 6px 8px;
+  display: block;
+  float: left;
+  color: #F00;
+  background-color: #FFF0F5;
+}
+
+.category_list a:hover {
+  background-color: #FFAEB9;
+}
+
+#category_ids_categories, #category_ids_subcategories {
+  width: 120px;
+}
+
+/*
+ * Target IE6
+ */
+* html .subscription_rate ul.description li {
+  display: marker;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+/*
+ * Target IE7
+ */
+*:first-child+html .subscription_rate ul.description li {
+  display: marker;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.subscription_rate .paypal_buttons input {
+  display: block;
+  margin: 0 auto 6px;
+}
+
+.subscription_rate .paypal_buttons img {
+  display: block;
+  margin: 0 auto 6px;
+}
+
+/* Hack share button */
+div.share_button span.stFb_text {
+     display: block;
+     height: 0;
+     overflow: hidden;
+     width: 0;
+}
+
+.share_button .st_twitter_hcount,
+.share_button .st_facebook_hcount {
+  display: block;
+  float: left;
+  margin-left: 4px;
+  }
+  
+.stFb_hbubble,
+.stTwVbubble {
+  margin-left: 4px;
+  margin-right: 6px;
+  }
+  
+div.button_row {
+  padding-bottom: 24px;
+}
+
+.row h3 {
+  margin-left: 200px;
+}
+
+div.row h3.left {
+    margin-left: 0;
+}
+
+div.scrolling {
+  overflow: auto;
+  height: 10em;
+  width: 27em;
+  border-left: 1px solid #404040;
+  border-top: 1px solid #404040;
+  border-bottom: 1px solid #d4d0c8;
+  border-right: 1px solid #d4d0c8;
+}
+
+/* this is for the overlay used by the map.js */
+.loading_overlay{
+background: url(/images/ajax-spinner.gif) no-repeat;
+background-color:rgba(0, 0, 0, 0.9);
+background-position:center; 
+}
+/* end map overlay */
+
+div.reports_home_nav {
+  margin-bottom: 28px;
+  padding-left: 384px;
+  padding-top: 12px;
+}
+
+div.reports_home_nav ul {
+  text-decoration: none;
+  list-style: none;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* NEW ADDITIONS--MOVE TO SASS FILE WHEN UI REDESIGN IS IMPLEMENTED */
+
+.add_new_publisher{
+    background: #cdeb8e; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NkZWI4ZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhNWM5NTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #cdeb8e 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdeb8e), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top,  #cdeb8e 0%,#a5c956 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 ); /* IE6-8 */
+    border: 1px solid #A7CB45;
+    cursor: pointer;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0px 1px 1px #E0EAC9, inset 0px -1px 1px #7FA111, 0 0 3px #ABABAB;
+    -moz-box-shadow: inset 0px 1px 1px #E0EAC9, inset 0px -1px 1px #7FA111, 0 0 3px #ABABAB;
+    box-shadow: inset 0px 1px 1px #E0EAC9, inset 0px -1px 1px #7FA111, 0 0 3px #ABABAB;
+    color: #315400;
+    font-size: 1.2em;
+    line-break: 1.2;
+    padding: 8px;
+    text-shadow: 1px 1px 0 #D1FF50;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+    }
+    
+.add_new_publisher:hover{
+    background: #a5c956; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E1Yzk1NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjZGViOGUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #a5c956 0%, #cdeb8e 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5c956), color-stop(100%,#cdeb8e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #a5c956 0%,#cdeb8e 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #a5c956 0%,#cdeb8e 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #a5c956 0%,#cdeb8e 100%); /* IE10+ */
+    background: linear-gradient(top,  #a5c956 0%,#cdeb8e 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5c956', endColorstr='#cdeb8e',GradientType=0 ); /* IE6-8 */
+    -webkit-box-shadow: inset 0px 1px 1px #E0EAC9, inset 0px -1px 1px #7FA111, 0 0 6px #ABABAB;
+    -moz-box-shadow: inset 0px 1px 1px #E0EAC9, inset 0px -1px 1px #7FA111, 0 0 6px #ABABAB;
+    box-shadow: inset 0px 1px 1px #E0EAC9, inset 0px -1px 1px #7FA111, 0 0 6px #ABABAB;
+    }
+
+/*
+ * Every selector in this file should be scoped by #analog_analytics #daily_deal.
+ */
+#analog_analytics #daily_deal {
+  background-color: white;
+  display: block;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  width: 940px;
+}
+
+#analog_analytics #daily_deal body,
+#analog_analytics #daily_deal th,
+#analog_analytics #daily_deal td,
+#analog_analytics #daily_deal p,
+#analog_analytics #daily_deal div {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#analog_analytics #daily_deal a img {
+  border: none;
+}
+
+#analog_analytics #daily_deal a {
+  background-image: none;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#analog_analytics #daily_deal blockquote {
+  color: rgb(69, 69, 69);
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  line-height: 18px;
+}
+
+#analog_analytics #daily_deal ul {
+  padding-left: 24px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#analog_analytics #daily_deal ul li {
+  color: rgb(69, 69, 69);
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  list-style-type: disc;
+}
+
+#analog_analytics #daily_deal li h4 {
+  margin: 0px 0px 4px 0px;
+  padding: 2px;
+  text-transform: uppercase;
+}
+
+#analog_analytics #daily_deal li p {
+  margin: 2px 0px 4px 0px;
+  margin: 0px;
+  padding: 2px;
+}
+
+#analog_analytics #daily_deal table {
+  border-bottom: none;
+  border-top: none;
+}
+
+#analog_analytics #daily_deal table th {
+  border-bottom: none;
+  border-top: none;
+}
+
+#analog_analytics #daily_deal th,
+#analog_analytics #daily_deal td {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#analog_analytics #daily_deal .rounded_corners {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#analog_analytics #daily_deal .page_row {
+  clear: both;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  text-align: left;
+}
+
+#analog_analytics #daily_deal .row {
+  width: 550px;
+}
+
+#analog_analytics #daily_deal .page_column_1,
+#analog_analytics #daily_deal .page_column_2,
+#analog_analytics #daily_deal .page_column_3,
+#analog_analytics #daily_deal .page_column_4,
+#analog_analytics #daily_deal .page_column_5,
+#analog_analytics #daily_deal .page_column_6,
+#analog_analytics #daily_deal .page_column_7,
+#analog_analytics #daily_deal .page_column_8,
+#analog_analytics #daily_deal .page_column_9,
+#analog_analytics #daily_deal .page_column_10,
+#analog_analytics #daily_deal .page_column_11,
+#analog_analytics #daily_deal .page_column_12,
+#analog_analytics #daily_deal .prefix_2 {
+  background-color: white;
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 20px;
+}
+
+#analog_analytics #daily_deal .warn {
+  margin-left: 13px;
+  margin-right: 13px;
+  margin-top: 8px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  background-color: red;
+  color: white;
+}
+
+#analog_analytics #daily_deal .notice {
+  margin-left: 13px;
+  margin-right: 13px;
+  margin-top: 8px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  background-color: rgb(0, 220, 0);
+  color: white;
+}
+
+#analog_analytics #daily_deal input[type="checkbox"],
+#analog_analytics #daily_deal input[type="radio"] {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+#analog_analytics #daily_deal #payment_header {
+  display: none;
+}
+
+#analog_analytics #daily_deal .row #credit_card_logos {
+  float: left;
+  height: 65px;
+  padding-bottom: 8px;
+  width: 100%;
+}
+
+#analog_analytics #daily_deal .row #credit_card_logos img {
+  float: left;
+  padding-top: 12px;
+}
+
+#analog_analytics #daily_deal #secure {
+  float: left;
+}
+
+#analog_analytics #daily_deal .row #credit_card_logos  #secure img {
+  padding-top: 0px;
+}
+
+#analog_analytics .past_deal {
+  background-color: white;
+  float: left;
+  height: 210px;
+  margin-bottom: 20px;
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-top: 20px;
+  padding: 12px;
+  width: 354px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+}
+
+#analog_analytics .past_deal h2 {
+  color: rgb(70, 70, 70);
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#analog_analytics .past_deal h2 a {
+  background-color: transparent;
+  color: rgb(70, 70, 70);
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+#analog_analytics .past_deal h3 {
+  color: rgb(70, 70, 70);
+  font-size: 16px;
+  margin-top: 0px;
+}
+
+#analog_analytics .past_deal img {
+  float: left;
+  height: 132px;
+}
+
+#analog_analytics .past_deal table.deal {
+  float: left;
+}
+
+#analog_analytics #daily_deal .past_deal td.value_proposition {
+  background-color: rgb(250, 168, 80);
+  height: 76px;
+  overflow-y: hidden;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#analog_analytics .past_deal table.dashboard {
+  float: left;
+  height: 36px;
+}
+
+#analog_analytics .past_deal th,
+#analog_analytics .past_deal td {
+  padding: 0px;
+  text-align: center;
+}
+
+#analog_analytics .past_deal th {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+#analog_analytics .past_deal td {
+  font-size: 12px;
+}
+
+#analog_analytics .past_deal .bring_back {
+  color: rgb(70, 70, 70);
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  min-width: 354px;
+  max-width: 354px;
+  text-align: center;
+  width: 354px;
+}
+
+#analog_analytics .past_deal .bring_back h3 {
+  margin-top: 12px;
+}
+
+#analog_analytics .past_deal .fb_wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+}
+
+#analog_analytics .past_deal .fb_wrapper iframe {
+  float: left;
+}
+
+#analog_analytics .past_deal .vote {
+  float: left;
+  padding-right: 8px;
+  text-align: right;
+  width: 72px;
+}
+
+#analog_analytics #daily_deal input.autowidth {
+  width: auto;
+  float: left;
+}
+
+#analog_analytics #daily_deal .floatleft {
+  float:left;
+}
+
+#analog_analytics #daily_deal optgroup option {
+  padding-left: 2px;
+}
+
+#payment_method_credit .expiration_date select {
+  float:left;
+  margin:2px;
+}
+
+#transparent_redirect_form input.autowidth {
+  width: auto;
+  float:left;
+}
+
+#transparent_redirect_form span.required_text {
+  float:left;
+  font-size:10px;
+  margin-left:25%;
+}
+
+#analog_analytics #daily_deal div.row #transparent_redirect_form div.daily_deal_purchase_errors {
+  clear:both;
+  text-align: left;
+  margin: 9px 0;
+  padding: 9px 9px;
+  background: #f7f7b0;
+}
+#analog_analytics #daily_deal div.row #transparent_redirect_form div.daily_deal_purchase_errors h3 {
+  font-size: 18px;
+  margin: 6px 0;
+}
+#analog_analytics #daily_deal div.row #transparent_redirect_form div.daily_deal_purchase_errors ul {
+  margin: 6px 0;
+}
+#analog_analytics #daily_deal div.row #transparent_redirect_form div.daily_deal_purchase_errors ul li {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#analog_analytics #daily_deal #refer_a_friend ul {
+  font-size: 120%;
+  margin-left: 20px;
+}
+
+#analog_analytics #daily_deal #refer_a_friend ul li {
+  list-style-image: none;
+  list-style-type: none;
+  padding-top: 14px;
+}
+
+#analog_analytics #daily_deal #refer_a_friend ul li:first-child {
+  margin-bottom: -6px;
+}
+
+#analog_analytics #daily_deal #refer_a_friend ul li:last-child {
+  margin-bottom: 8px;
+}
+
+#analog_analytics #daily_deal #refer_a_friend ul li img {
+  margin-bottom: -12px;
+  margin-right: 0.75em;
+}
+
+#analog_analytics #daily_deal #refer_a_friend .consumer_referral_link {
+  margin-left: 0.25em;
+  width: auto;
+}
+
+.refer_a_friend #bottom_spacer {
+  height: 8px;
+}
+
+iframe.optimal {
+  width: 750px;
+  height: 930px;
+}
+
+div.iframe_content {
+  width: 700px;
+}
+
+table.daily_deal_order {
+  margin: 16px 0;
+}
+
+table.daily_deal_order .quantity,
+table.daily_deal_order .price {
+  text-align: right;
+}
+
+
+/* MY DEALS PAGE ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+#analog_analytics #daily_deal .my_deals_page .nav{
+    margin: 10px 0;
+    }
+
+#analog_analytics #daily_deal .my_deals_page .nav a{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: .4em;
+    text-decoration: none;
+    }
+
+#analog_analytics #daily_deal .my_deals_page .nav a.current_page,
+#analog_analytics #daily_deal .my_deals_page .nav a:hover{
+    background-color: #cccccc;
+    color: black;
+    }
+
+.my_deals_page .status{
+    white-space: nowrap;
+    }
+    
+#analog_analytics #daily_deal .daily_deal_purchase.my_deals th,
+#analog_analytics #daily_deal .daily_deal_purchase.my_deals th{
+    text-align: left;
+    }
+
+
+#analog_analytics #daily_deal .daily_deal_purchase.my_deals td{
+    font-weight: normal;
+    text-transform: none;
+    }
+
+#analog_analytics #daily_deal .daily_deal_purchase.my_deals td.description{
+    font-weight: bold;
+    }
+
+/* PAGE STRUCTURE */
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+#analog_analytics {
+    width: 100%;
+    background: none;
+}
+#analog_analytics #daily_deal {
+    margin: 0 auto;
+    width: 100%;
+    background: none;
+}
+#a_a {
+    text-align: center;
+    margin-top: -20px;
+    padding-bottom: 20px;
+}
+#analog_analytics #daily_deal #dd_content {
+    background: none;
+}
+#analog_analytics #daily_deal #deal_page_left_column {
+    float: left;
+    width: 680px;
+}
+#analog_analytics #daily_deal body, #analog_analytics #daily_deal th, #analog_analytics #daily_deal td, #analog_analytics #daily_deal p, #analog_analytics #daily_deal div, #analog_analytics #daily_deal a {
+    font-family: Arial, helvetica, san-serif;
+}
+#analog_analytics #daily_deal .notice {
+    background: none repeat scroll 0 0 #0ECC00;
+    border: 1px solid #0ba200;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 8px #CCCCCC;
+    color: white;
+    font-size: 1.6em;
+    margin-left: 13px;
+    margin-right: 13px;
+    margin-top: 8px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-shadow: 1px 1px 3px #0BA200;
+    margin-bottom: 25px;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics #daily_deal .warn {
+    background: none repeat scroll 0 0 #ea0000;
+    border: 1px solid #b40000;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 8px #CCCCCC;
+    color: white;
+    font-size: 1.2em;
+    margin-left: 13px;
+    margin-right: 13px;
+    margin-top: 8px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-shadow: 1px 1px 3px #0BA200;
+    margin-bottom: 25px;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics #daily_deal .page_column_12 h1 {
+    margin-bottom: 10px;
+}
+#analog_analytics #daily_deal .page_column_12 h4 {
+    font-weight: 700;
+    font-size: 18px;
+}
+/*/////////////////////////// SUBSCRIBE BAR //////////////////////////////////*/
+.signup_alert {
+    background: #333333;
+    margin-top: -35px;
+}
+.signup_alert p {
+    color: #ffffff;
+    font-weight: 800;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 0px;
+    position: relative;
+}
+#subscribe_box_wrapper {
+    background: #111111;
+    overflow: hidden;
+}
+#subscribe_box_wrapper #subscribe_box {
+    margin: 0 auto;
+    padding: 10px;
+    width: 700px;
+}
+#subscribe_box_wrapper #subscribe_box h4 {
+    color: #ffffff;
+    float: left;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+    margin-top: 1px;
+}
+#subscribe_box_wrapper #subscribe_box #subscribe_form #subscriber_email {
+    border: none;
+    border-radius: 5px;
+    color: #333333;
+    font-size: 12px;
+    height: 20px;
+    padding: 3px 5px;
+    margin-right: 4px;
+    width: 170px;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#subscribe_box_wrapper #subscribe_box #subscribe_form {
+    width: 500px;
+    float: left;
+}
+#subscribe_box_wrapper #subscribe_box #subscribe_form .sign_up {
+    background: #008000;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 900;
+    height: 26px;
+    padding: 5px 5px;
+    margin-right: 5px;
+    text-shadow: 0px 0px 3px #888888;
+    cursor: pointer;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#subscribe_box_wrapper #subscribe_box #subscribe_form fieldset a, #subscribe_box_wrapper #subscribe_box #subscribe_form fieldset {
+    color: #ffffff;
+    font-size: 12px;
+}
+#subscribe_box_wrapper #subscribe_box #subscribe_form fieldset a {
+    text-decoration: underline;
+}
+#subscribe_box_wrapper #subscribe_box #subscribe_form #subscriber_terms {
+    margin-top: -1px;
+}
+#subscribe_box_wrapper #subscribe_box #hide_form_btn {
+    color: #ffffff;
+}
+/*//////////////////////////// DAILY DEAL LEFT COLUMN ///////////////////////////////////*/
+#analog_analytics #daily_deal #dd_content .daily_deal_box {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    background: #ffffff;
+    float: left;
+    margin-bottom: 20px;
+    width: 675px;
+    box-shadow: 0 0 8px #cccccc;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+
+#analog_analytics .daily_deal_box ul li, #analog_analytics .daily_deal_box ol li, #analog_analytics .daily_deal_box p {
+    margin-left: 0;
+}
+
+
+#analog_analytics #daily_deal .daily_deal_box ul li,
+#analog_analytics .daily_deal_box ol li,
+#analog_analytics .daily_deal_box p {
+    color: #333333;
+    font-size: 0.95em;
+    line-height: 150%;
+        font-family: Arial,helvetica,san-serif;
+}
+
+#analog_analytics .daily_deal_box ul{
+    margin-left:0px;
+}
+#analog_analytics .daily_deal_box h5 {
+    color: #000000;
+    font-size: 1.1em;
+    font-weight: 900;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+#analog_analytics #daily_deal #dd_content #dd_nav {
+    background: #f7f7f7; /* Old browsers */
+    background: -moz-linear-gradient(top, #f7f7f7 0%, #e2e2e2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#e2e2e2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* IE10+ */
+    background: linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* W3C */
+    -pie-background: background : linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* W3C */
+    border: 1px solid #ffffff;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics #daily_deal #dd_content #dd_nav ul {
+    padding: 0;
+    margin: 0;
+}
+#analog_analytics #daily_deal #dd_content #dd_nav ul li {
+    border-right: 1px solid #cccccc;
+    float: left;
+    font-size: .8em;
+    font-weight: 600;
+    list-style: none;
+    text-transform: uppercase;
+}
+#analog_analytics #daily_deal #dd_content #dd_nav ul li a {
+    color: #767676;
+    display: block;
+    padding: 5px 10px;
+    -webkit-transition: color 0.25s ease-in;
+    -moz-transition: color 0.25s ease-in;
+    -o-transition: color 0.25s ease-in;
+    transition: color 0.25s ease-in;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+#analog_analytics #daily_deal #dd_content #dd_nav ul li a:hover {
+    color: #ca4157;
+}
+#analog_analytics #daily_deal #dd_content #dd_nav ul li .menu-active {
+    color: #ca4157;
+}
+#analog_analytics #daily_deal_content_box {
+    padding: 15px;
+    border-top: 1px solid #cccccc;
+}
+#analog_analytics #daily_deal_content_box h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+/* Featured Daily Deal Picture box */
+#analog_analytics #daily_deal_content_box .dd_right_panel {
+    float: right;
+    width: 425px;
+}
+/* Daily Deal Highlights and Fine Print */
+#analog_analytics #daily_deal_content_box .daily_deal_box .dd_info_box {
+    float: left;
+    width: 190px;
+}
+#analog_analytics #daily_deal_content_box .dd_right_panel #dd_about_the_deal {
+    margin-right: 30px;
+}
+#analog_analytics #daily_deal_content_box .dd_right_panel img {
+    height: 260px;
+    width: 425px;
+    margin-bottom: 20px;
+}
+/* Daily Deal Buy Now Buttons*/
+#analog_analytics #daily_deal_content_box .dd_left_panel #dd_buy_box {
+    background: url(<%= asset_path 'wcax/assets/images/adirondacks-images/adirondack-ribbon.png' %>) no-repeat;
+    height: 102px;
+    margin-left: -34px;
+    padding-left: 40px;
+    padding-top: 15px;
+    position: relative;
+    width: 240px;
+}
+#analog_analytics #daily_deal_content_box #dd_buy_box #dd_price {
+    color: #db2326;
+    float: left;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+#analog_analytics #daily_deal_content_box #dd_buy_box .dd_price_2 {
+
+    font-size: 45px !important;
+}
+#analog_analytics #daily_deal_content_box #dd_buy_box .dd_price_3 {
+
+    font-size: 46px !important;
+    margin-left: -15px;
+}
+#analog_analytics #daily_deal_content_box #dd_buy_box .dd_price_4 {
+    margin-left: -20px;
+    font-size: 36px !important;
+}
+#analog_analytics #daily_deal_content_box #dd_buy_box .dd_price_5 {
+
+    font-size: 30px;
+}
+#analog_analytics #daily_deal_content_box #dd_buy_box .dd_price_6 {
+
+    font-size: 31px !important;
+    margin-left: -30px;
+}
+#analog_analytics #daily_deal_content_box #dd_buy_box .dd_price_7 {
+
+    margin-left: -35px;
+}
+#analog_analytics #daily_deal_content_box #dd_buy_box .dd_price_9 {
+    font-size: 24px !important;
+    margin-left: -35px;
+}
+#analog_analytics #daily_deal_content_box #dd_buy_box #buy_now_button {
+    background: #db2326; /* Old browsers */
+    background: -moz-linear-gradient(top, #db2326 0%, #c71231 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#db2326), color-stop(100%,#c71231)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #db2326 0%,#c71231 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #db2326 0%,#c71231 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #db2326 0%,#c71231 100%); /* IE10+ */
+    background: linear-gradient(top, #db2326 0%,#c71231 100%); /* W3C */
+    -pie-background: linear-gradient(top, #db2326 0%,#c71231 100%); /* W3C */
+    border: 1px solid #8b0d22;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 2px #ffffff;
+    color: #ffffff;
+    font-size: 28px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 59px;
+    right: 72px;
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: 0.10s;
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-property: box-shadow;
+    -moz-transition-duration: 0.10s;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-property: box-shadow;
+    -o-transition-duration: 0.10s;
+    -o-transition-timing-function: ease-in, ease-in transition-property :box-shadow;
+    transition-duration: 0.10s;
+    transition-timing-function: ease-in;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics #daily_deal_content_box #dd_buy_box #buy_now_button:hover {
+    text-shadow: 0px 0px 4px #8b0d22;
+    box-shadow: inset 0px 0px 6px #b80926;
+    position: absolute;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics #daily_deal_content_box #deal_over {
+    background: #db2326; /* Old browsers */
+    background: -moz-linear-gradient(top, #888 0%, #555 100%) !important; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#888), color-stop(100%,#555)) !important; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #888 .un0%,#555 100%) !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #888 0%,#555 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #888888 0%,#555555 100%) !important; /* IE10+ */
+    background: linear-gradient(top, #888 0%,#555 100%) !important; /* W3C */
+    filter: progid :DXImageTransform.Microsoft.gradient( startColorstr='#888888', endColorstr='#555555',GradientType=0 ) !important; /* IE6-9 */
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 2px #ffffff;
+    color: #ffffff !important;
+    font-size: 16px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 61px;
+    right: 72px;
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: 0.10s;
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-property: box-shadow;
+    -moz-transition-duration: 0.10s;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-property: box-shadow;
+    -o-transition-duration: 0.10s;
+    -o-transition-timing-function: ease-in, ease-in transition-property :box-shadow;
+    transition-duration: 0.10s;
+    transition-timing-function: ease-in;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics #daily_deal_content_box #sold_out, #analog_analytics #daily_deal_content_box #buy_now #not_yet {
+    color: #666666;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 95%;
+    margin-top: -10px;
+    text-align: center;
+    width: 155px;
+}
+#analog_analytics #daily_deal_content_box #buy_now #not_yet {
+    font-size: 22px;
+    margin-top: 8px;
+}
+#analog_analytics #daily_deal_content_box #sold_out {
+    margin-top: 4px;
+}
+
+/*#analog_analytics #daily_deal_content_box #buy_now .unavailable {
+    color: #dddddd;
+    font-size:24px;
+    font-weight:700;
+    margin-left:-25px;
+    padding-top:8px;
+
+}*/
+/* Daily Deal Dashboard */
+#analog_analytics .dd_left_panel #deal_dashboard, #analog_analytics .dashboard .deal_dashboard {
+    background: #dcf3fd; /* Old browsers */
+    background: -moz-linear-gradient(top, #dcf3fd 0%, #8dd9fc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dcf3fd), color-stop(100%,#8dd9fc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #dcf3fd 0%,#8dd9fc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #dcf3fd 0%,#8dd9fc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #dcf3fd 0%,#8dd9fc 100%); /* IE10+ */
+    background: linear-gradient(top, #dcf3fd 0%,#8dd9fc 100%); /* W3C */
+    -pie-background: linear-gradient(top, #dcf3fd 0%,#8dd9fc 100%); /* W3C */
+    border: 1px solid #80D3F7;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 3px #ffffff;
+    margin-top: -15px;
+    width: 189px;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics .dd_left_panel #deal_dashboard .dashboard_value, #analog_analytics .dashboard .deal_dashboard .dashboard_value {
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #80D3F7;
+    float: left;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 61px;
+}
+#analog_analytics .dd_left_panel #deal_dashboard .dashboard_value:first-child, #analog_analytics .dashboard .deal_dashboard .dashboard_value:first-child {
+    border-left: none;
+}
+#analog_analytics .dd_left_panel #deal_dashboard .dashboard_value:last-child, #analog_analytics .dashboard .deal_dashboard .dashboard_value:last-child {
+    border-right: none;
+}
+#analog_analytics .dd_left_panel #deal_dashboard .dashboard_value p, #analog_analytics .dashboard .deal_dashboard .dashboard_value p {
+    color: #344d58;
+    font-size: .8em;
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 0px #e5f7ff;
+}
+#analog_analytics .dd_left_panel #deal_dashboard .dashboard_value .dashboard_bold, #analog_analytics .dashboard .deal_dashboard .dashboard_value .dashboard_bold {
+    color: #344d58;
+    font-size: 1.6em;
+    text-shadow: 1px 1px 0px #e5f9ff;
+    font-weight: 600;
+}
+#analog_analytics .dashboard_value .dashboard_digits_6 {
+    font-size: 18px !important;
+}
+#analog_analytics .dashboard_value .dashboard_digits_7 {
+    font-size: 16px !important;
+}
+#analog_analytics .dashboard_value .dashboard_digits_9 {
+    font-size: 13px !important;
+}
+#analog_analytics .dd_left_panel #deal_dashboard #timer, #analog_analytics .dashboard .deal_dashboard .timer {
+    border-left: 1px solid #86b0c4;
+    border-top: 1px solid #86b0c4;
+    border-right: 1px solid #e5f7ff;
+    border-bottom: 1px solid #e5f7ff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 170px;
+    margin-bottom: 5px;
+}
+#analog_analytics .dd_left_panel #deal_dashboard #time_left_to_buy, #analog_analytics .dashboard .deal_dashboard .time_left_to_buy {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 42px;
+}
+#analog_analytics .dd_left_panel #deal_dashboard #deals_sold_counter, #analog_analytics .dashboard .deal_dashboard .number_sold {
+    color: #344d58;
+    font-size: 1.50em;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: -4px;
+    text-align: center;
+}
+/* Daily Deal Share Box */
+#analog_analytics #daily_deal_content_box .dd_left_panel {
+    width: 190px;
+}
+#analog_analytics #daily_deal_content_box .dd_share_panel {
+    background: #f9f9f9; /* Old browsers */
+    background: -moz-linear-gradient(top, #f9f9f9 0%, #e6e6e6 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#e6e6e6)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f9f9f9 0%,#e6e6e6 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f9f9f9 0%,#e6e6e6 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f9f9f9 0%,#e6e6e6 100%); /* IE10+ */
+    background: linear-gradient(top, #f9f9f9 0%,#e6e6e6 100%); /* W3C */
+    -pie-background: linear-gradient(top, #f9f9f9 0%,#e6e6e6 100%); /* W3C */
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    box-shadow: inset 0 0 2px #ffffff;
+    overflow: hidden;
+    margin-top: 15px;
+    width: 189px;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics #daily_deal_content_box .dd_share_panel h4 {
+    font-size: .9em;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    text-align: center;
+}
+#analog_analytics #daily_deal_content_box .dd_left_panel .share_link_wrap {
+    display: block;
+    margin-bottom: 15px;
+    overflow: hidden;
+    padding-left: 20px;
+    width: 158px;
+}
+#analog_analytics #daily_deal_content_box .dd_left_panel .share_link {
+    margin-right: 10px;
+}
+
+#analog_analytics .share_link {
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    height: 40px;
+    margin-right: 20px;
+    overflow: hidden;
+    text-indent: -1000px;
+    width: 42px;
+    -webkit-transition: opacity 0.20s ease-in;
+    -moz-transition: opacity 0.20s ease-in;
+    -o-transition: opacity 0.20s ease-in;
+    transition: opacity 0.20s ease-in;
+    }
+    
+#analog_analytics .share_link:hover{
+    opacity: 0.5;
+    }
+    
+#analog_analytics .share_link span {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    width: 0;
+    }
+    
+#analog_analytics #daily_deal .share_link_facebook{
+    background: url(<%= asset_path 'wcax/assets/images/graphics/share-icons.png' %>) no-repeat;
+     }
+     
+#analog_analytics #daily_deal .share_link_facebook:hover {
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+    }
+
+    
+#analog_analytics #daily_deal .share_link_twitter{
+    background: url(<%= asset_path 'wcax/assets/images/graphics/share-icons.png' %>) -44px 0px no-repeat;
+     }
+     
+#analog_analytics #daily_deal .share_link_mail{
+    background: url(<%= asset_path 'wcax/assets/images/graphics/share-icons.png' %>) -86px 0px no-repeat;
+     }
+     
+
+/* old share styles--changed to be able to be used on other pages besides the daily deal page and to use span instead of text indent for hiding text because google things negative text indent is spammy */
+
+/*
+#analog_analytics .share_button_facebook {
+    background: url("/themes/wcax/images/graphics/share-icons.png") no-repeat;
+    border: none;
+    display: block;
+    height: 41px;
+    float: left;
+    text-indent: -9999em;
+    opacity: 1.0;
+    width: 44px;
+    -webkit-transition: opacity 0.20s ease-in;
+    -moz-transition: opacity 0.20s ease-in;
+    -o-transition: opacity 0.20s ease-in;
+    transition: opacity 0.20s ease-in;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+*/
+/*
+#analog_analytics #daily_deal_content_box .dd_left_panel .share_button_twitter {
+    background: url("/themes/wcax/images/graphics/share-icons.png") -44px 0px no-repeat;
+    border: none;
+    display: block;
+    height: 41px;
+    float: left;
+    opacity: 1.0;
+    text-indent: -9999em;
+    width: 42px;
+    -webkit-transition: opacity 0.20s ease-in;
+    -moz-transition: opacity 0.20s ease-in;
+    -o-transition: opacity 0.20s ease-in;
+    transition: opacity 0.20s ease-in;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+*/
+/*
+#analog_analytics #daily_deal_content_box .dd_left_panel .share_button_mail {
+    background: url("/themes/wcax/images/graphics/share-icons.png") -88px 0px no-repeat;
+    border: none;
+    display: block;
+    height: 41px;
+    float: left;
+    opacity: 1.0;
+    text-indent: -9999em;
+    width: 42px;
+    -webkit-transition: opacity 0.20s ease-in;
+    -moz-transition: opacity 0.20s ease-in;
+    -o-transition: opacity 0.20s ease-in;
+    transition: opacity 0.20s ease-in;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+*/
+#analog_analytics #daily_deal_content_box .dd_left_panel .share_button_mail:hover {
+    opacity: 0.5;
+}
+/* Get yours free button */
+#analog_analytics #daily_deal_content_box .dd_left_panel #get_yours_free_btn {
+    background: #000000; /* Old browsers */
+    background: -moz-linear-gradient(top, #b2b2b2 1%, #000000 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#b2b2b2), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #b2b2b2 1%,#000000 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #b2b2b2 1%,#000000 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #b2b2b2 1%,#000000 100%); /* IE10+ */
+    background: linear-gradient(top, #b2b2b2 1%,#000000 100%); /* W3C */
+    -pie-background: linear-gradient(top, #b2b2b2 1%,#000000 100%); /* W3C */
+    border-radius: 10px 10px 10px 10px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 1em;
+    font-weight: 800;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    padding: 5px 0 5px 29px;
+    position: relative;
+    width: 163px;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics #daily_deal_content_box .dd_left_panel .small_arrow {
+    background: url(<%= asset_path 'wcax/assets/images/graphics/get-free-arrow.png' %>) no-repeat scroll 0 0 transparent;
+    bottom: 11px;
+    display: block;
+    height: 10px;
+    position: absolute;
+    right: 25px;
+    width: 10px;
+}
+#analog_analytics #daily_deal_content_box .dd_left_panel .get_your_free_text, #analog_analytics #daily_deal_content_box .dd_left_panel #get_your_free_details {
+    color: #000000;
+    font-size: .8em;
+    line-height: 120%;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#analog_analytics #daily_deal_content_box .dd_left_panel #get_your_free_details {
+    text-decoration: underline;
+    display: block;
+}
+#analog_analytics #daily_deal_content_box .dd_left_panel #get_free_details_text {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border-radius: 8px 8px 8px 8px;
+    margin-top: 10px;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+#analog_analytics #daily_deal_content_box .dd_left_panel #get_free_details_text p {
+    margin: 0px;
+}
+#analog_analytics #daily_deal_content_box .dd_left_panel .click-close {
+    clear: none;
+    color: #333333;
+    display: block;
+    font-size: 21px;
+    font-weight: 700;
+    margin-left: 14px;
+    margin-top: 57px;
+    position: absolute;
+}
+/*///////////////////// Daily Deal Location and Details ///////////////////////////*/
+#analog_analytics #daily_deal #dd_info_container_inner {
+    padding: 15px;
+}
+#analog_analytics #daily_deal #dd_info_container_inner #dd_fine_print {
+    float: right;
+    width: 415px;
+}
+#analog_analytics #daily_deal #dd_info_container_inner #dd_location {
+    float: left;
+    width: 190px;
+}
+#analog_analytics #daily_deal #dd_info_container_inner #dd_location h4 {
+    color: #333333;
+    font-size: .9em;
+    font-weight: 800;
+}
+#analog_analytics #daily_deal #dd_info_container_inner #dd_location a {
+    color: #cc0e21;
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    margin-top: -7px;
+    -webkit-transition: color 0.15s ease-in;
+    -moz-transition: color 0.15s ease-in;
+    -o-transition: color 0.15s ease-in;
+    transition: color 0.15s ease-in;
+}
+#analog_analytics #daily_deal #dd_info_container_inner #dd_location a:hover {
+    color: #ed1b30;
+}
+#analog_analytics #daily_deal #dd_info_container_inner #dd_location .visit_website_link {
+    margin-top: -15px;
+}
+/*//////////////////////////// RIGHT RAIL - RIGHT SIDEBAR ////////////////////////////*/
+#analog_analytics #daily_deal #daily_deal_right_rail {
+    width: 230px;
+    float: right;
+}
+#analog_analytics #daily_deal #daily_deal_right_rail h4 {
+    background: none repeat scroll 0 0 #333333;
+    border-radius: 8px 8px 8px 8px;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    font-weight: 800;
+    margin-bottom: 5px;
+    padding: 6px 0;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics #daily_deal #daily_deal_right_rail .side_deal_wrap {
+    background: url(<%= asset_path 'wcax/assets/images/graphics/groovepaper.png' %>) repeat;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 8px #cccccc;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics .side_deal_wrap .side_deal_thumb {
+    height: 125px;
+    width: 208px;
+}
+#analog_analytics #daily_deal #daily_deal_right_rail .side_deal_wrap h3 {
+    color: #333333;
+    font-size: 0.85em;
+    text-decoration: underline;
+}
+#analog_analytics #daily_deal #daily_deal_right_rail .facebook_likebox {
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    overflow: hidden;
+    box-shadow: 0 0 8px #cccccc;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics #daily_deal #daily_deal_right_rail .adirondacks {
+    border: 1px solid #FDCE1C;
+}
+#analog_analytics #daily_deal #daily_deal_right_rail .sevendays {
+    border: 1px solid #B9B309;
+}
+#analog_analytics #daily_deal #daily_deal_right_rail .vermont {
+    border: 1px solid #F68026;
+}
+#analog_analytics #daily_deal #daily_deal_right_rail .jumpaways {
+    border: 1px solid #243E90;
+}
+
+#analog_analytics #daily_deal #daily_deal_right_rail .side_deal_logo {
+    display: block;
+    text-align: center;
+}
+/*/////////////////////////CHECKOUT PAGES ///////////////////////////////*/
+#analog_analytics #daily_deal .daily_deal_payment h2 {
+    background: none repeat scroll 0 0 #DBDBDB;
+    color: #000000;
+    font: bold 1.2em Arial, Helvetica, sans-serif;
+    margin: 12px 0 4px;
+    padding: 6px;
+}
+#analog_analytics #daily_deal .page_column_12 {
+    border: 1px solid #CCCCCC;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 8px #CCCCCC;
+    padding: 0 10px 10px;
+    width: 845px;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics #daily_deal .page_column_8 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 8px #CCCCCC;
+    float: left;
+    margin-bottom: 2%;
+    margin-right: 0;
+    padding: 0 1% 1%;
+    position: relative;
+    width: 612px;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics #daily_deal .page_column_4 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 8px #CCCCCC;
+    float: right;
+    margin-left: 1%;
+    padding: 0 1%;
+    position: relative;
+    width: 200px;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics #daily_deal .page_column_4 h2 {
+    background: none repeat scroll 0 0 #DBDBDB;
+    font-size: 1em;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    margin: 12px 0 4px;
+    padding: 6px;
+}
+#analog_analytics #daily_deal .page_column_4 p {
+    color: #333333;
+    font-size: 0.85em;
+    display: block;
+    line-height: 150%;
+    padding: 0 5px;
+}
+#analog_analytics #daily_deal .page_column_12 h1, #analog_analytics #daily_deal .confirm_payment h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 9px;
+}
+/*/////////////////////////// Login Page ////////////////////////////*/
+#analog_analytics #daily_deal .login {
+
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 8px #CCCCCC;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 216px;
+    padding: 0 25px 10px;
+    width: 395px;
+    margin-top: 15px;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics #daily_deal .login #session_remember_me_flag {
+    margin-left: 78px;
+}
+#analog_analytics #daily_deal .login .login_header {
+    background: #f7f7f7; /* Old browsers */
+    background: -moz-linear-gradient(top, #f7f7f7 0%, #e2e2e2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#e2e2e2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* IE10+ */
+    background: linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* W3C */
+    -pie-background: background : linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* W3C */
+    border: 1px solid #ffffff;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+    margin-left: -25px;
+    margin-right: -25px;
+    padding-left: 20px;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics #daily_deal .login .login_header h2, #analog_analytics #daily_deal .login .login_header p {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #555555;
+    margin: 0px;
+    padding: 10px 0px;
+}
+#analog_analytics #daily_deal .login  div.label {
+    width: 75px;
+}
+#analog_analytics #daily_deal .login .row {
+    width: 386px;
+}
+.login_header p {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #555555;
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+#analog_analytics #daily_deal #login_form {
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#analog_analytics #daily_deal #login_form a{
+    font-weight: bold;
+}
+
+/*/////////////////////// Signup Page //////////////////////////*/
+#analog_analytics #daily_deal .signup {
+
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 8px #CCCCCC;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 191px;
+    padding: 0 25px 10px;
+    width: 446px;
+    margin-top: 15px;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics #daily_deal .signup .login_header {
+    background: #f7f7f7; /* Old browsers */
+    background: -moz-linear-gradient(top, #f7f7f7 0%, #e2e2e2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#e2e2e2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* IE10+ */
+    background: linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* W3C */
+    -pie-background: background : linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* W3C */
+    behavior: url(stylesheets/PIE.htc);
+    border: 1px solid #ffffff;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+    margin-left: -25px;
+    margin-right: -25px;
+    padding-left: 20px;
+}
+#analog_analytics #daily_deal .#analog_analytics #daily_deal .login {
+
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 8px #CCCCCC;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 216px;
+    padding: 0 25px 10px;
+    width: 395px;
+    margin-top: 15px;
+}
+#analog_analytics #daily_deal .login .login_header {
+    background: #f7f7f7; /* Old browsers */
+    background: -moz-linear-gradient(top, #f7f7f7 0%, #e2e2e2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#e2e2e2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* IE10+ */
+    background: linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* W3C */
+    -pie-background: background : linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* W3C */
+    behavior: url(stylesheets/PIE.htc);
+    border: 1px solid #ffffff;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+    margin-left: -25px;
+    margin-right: -25px;
+    padding-left: 20px;
+}
+#analog_analytics #daily_deal .signup .login_header h2, #analog_analytics #daily_deal .signup .login_header p {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #555555;
+    margin: 0px;
+    padding: 10px 0px;
+}
+#analog_analytics #daily_deal .signup  div.label {
+    width: 130px;
+}
+#analog_analytics #daily_deal .signup .row {
+    width: 443px;
+}
+/*////////////////////// Daily Deal Transition /////////////////////////*/
+#analog_analytics #daily_deal .consumer_transition {
+    background: none repeat scroll 0 0 #333333;
+    border-radius: 10px 10px 10px 10px;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-left: 24px;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    width: 820px;
+    behavior: url(/stylesheets/PIE.htc);
+    border: 1px solid #111111;
+    position: relative;
+}
+#analog_analytics #daily_deal .consumer_transition span {
+    font-size: 20px;
+}
+/*///////////////////////// Feature Your Business / Contact Us ///////////////////////*/
+#analog_analytics #daily_deal .page_column_12 .contact_top_line {
+    margin-bottom: 0px;
+}
+#analog_analytics #daily_deal .page_column_12 #contact_form {
+    margin-left: 25px;
+}
+#analog_analytics #daily_deal .page_column_12 #first_name, #analog_analytics #daily_deal .page_column_12 #last_name, #analog_analytics #daily_deal .page_column_12 #name_first, #analog_analytics #daily_deal .page_column_12 #name_last {
+    display: block;
+    width: 214px;
+}
+#analog_analytics #daily_deal .page_column_12 .first-name-block {
+    float: left;
+    margin-right: 15px;
+}
+#analog_analytics #daily_deal .page_column_12 .required_fields, #analog_analytics #daily_deal .page_column_12 .required {
+    color: red;
+}
+#analog_analytics #daily_deal .page_column_12 #support_contact_request_reason_for_request {
+    font-size: 12px;
+    margin-top: 15px;
+    padding: 2px;
+    width: 450px;
+}
+#analog_analytics #daily_deal .page_column_12 #business_contact_request_message, #analog_analytics #daily_deal .page_column_12 #support_contact_request_message, #analog_analytics #daily_deal .page_column_12 #business_contact_request_email, #analog_analytics #daily_deal .page_column_12 #business_contact_request_business, #analog_analytics #daily_deal .page_column_12 #support_contact_request_email {
+    width: 450px;
+}
+#analog_analytics #daily_deal .page_column_12 .name-block {
+    float: left;
+}
+/*////////////////////// All Deals / Past Deals Pages ///////////////////////*/
+#analog_analytics #daily_deal #daily_deal_content_box .daily_deal {
+    border-bottom: 1px dashed #000;
+    padding: 15px 0;
+}
+#analog_analytics #daily_deal #daily_deal_content_box .daily_deal .deal_image {
+    float: left;
+}
+#analog_analytics #daily_deal #daily_deal_content_box .daily_deal .deal_details {
+    float: left;
+    margin: 0 10px;
+    width: 35%;
+}
+#analog_analytics #daily_deal #daily_deal_content_box .daily_deal .deal_details h4 {
+    color: #464548;
+    font-size: 18px;
+    line-height: 20px;
+}
+#analog_analytics #daily_deal #daily_deal_content_box .daily_deal .deal_details h5 {
+    font-size: 18px;
+    margin: 7px 0;
+    text-transform: none;
+}
+#analog_analytics #daily_deal #daily_deal_content_box .daily_deal .deal_details .button {
+    background: #fff802; /* Old browsers */
+    background: -moz-linear-gradient(top, #fff802 0%, #fdce1c 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff802), color-stop(100%,#fdce1c)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fff802 0%,#fdce1c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fff802 0%,#fdce1c 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fff802 0%,#fdce1c 100%); /* IE10+ */
+    background: linear-gradient(top, #fff802 0%,#fdce1c 100%); /* W3C */
+    -pie-background: linear-gradient(top, #fff802 0%,#fdce1c 100%); /* W3C */
+    border-radius: 8px;
+    color: #DB2326;
+    font-weight: bold;
+    padding: 5px 25px;
+    behavior: url(/stylesheets/PIE.htc);
+    position: relative;
+}
+#analog_analytics #daily_deal #daily_deal_content_box .daily_deal .dashboard {
+    float: right;
+    margin: 25px 0 0;
+}
+#analog_analytics .daily_deal .dashboard .dd_buy_box {
+    background: url("/themes/wcax/images/adirondacks-images/adirondack-ribbon-alldeals.png") no-repeat;
+    height: 70px;
+    margin: -15px 0 -10px -13px;
+    padding-left: 15px;
+    position: relative;
+    width: 240px;
+}
+#analog_analytics .daily_deal .dashboard .buy_now_button {
+    background: #db2326; /* Old browsers */
+    background: -moz-linear-gradient(top, #db2326 0%, #c71231 100%) !important; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#db2326), color-stop(100%,#c71231)) !important; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #db2326 0%,#c71231 100%) !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #db2326 0%,#c71231 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #db2326 0%,#c71231 100%) !important; /* IE10+ */
+    background: linear-gradient(top, #db2326 0%,#c71231 100%) !important; /* W3C */
+    -pie-background: linear-gradient(top, #db2326 0%,#c71231 100%) !important; /* W3C */
+    border: 1px solid #8b0d22;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 2px #ffffff;
+    color: #ffffff !important;
+    font-size: 18px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 29px;
+    right: 120px;
+    -webkit-transition-property: box-shadow, text-shadow;
+    -webkit-transition-duration: 0.10s, 0.30s;
+    -webkit-transition-timing-function: ease-in, ease-in;
+    -moz-transition-property: box-shadow, text-shadow;
+    -moz-transition-duration: 0.10s, 0.30s;
+    -moz-transition-timing-function: ease-in, ease-in;
+    -o-transition-property: box-shadow, text-shadow;
+    -o-transition-duration: 0.10s, 0.30s;
+    -o-transition-timing-function: ease-in, ease-in transition-property :box-shadow, text-shadow;
+    transition-duration: 0.10s, 0.30s;
+    transition-timing-function: ease-in, ease-in;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics .daily_deal .dashboard .deal_over {
+    background: #db2326; /* Old browsers */
+    background: -moz-linear-gradient(top, #888 0%, #555 100%) !important; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#888), color-stop(100%,#555)) !important; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #888 0%,#555 100%) !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #888 0%,#555 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #888888 0%,#555555 100%) !important; /* IE10+ */
+    background: linear-gradient(top, #888 0%,#555 100%) !important; /* W3C */
+    -pie-background: linear-gradient(top, #888 0%,#555 100%) !important; /* W3C */
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 2px #ffffff;
+    color: #ffffff !important;
+    font-size: 16px;
+    padding: 5px 7px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 29px;
+    right: 120px;
+    -webkit-transition-property: box-shadow, text-shadow;
+    -webkit-transition-duration: 0.10s, 0.30s;
+    -webkit-transition-timing-function: ease-in, ease-in;
+    -moz-transition-property: box-shadow, text-shadow;
+    -moz-transition-duration: 0.10s, 0.30s;
+    -moz-transition-timing-function: ease-in, ease-in;
+    -o-transition-property: box-shadow, text-shadow;
+    -o-transition-duration: 0.10s, 0.30s;
+    -o-transition-timing-function: ease-in, ease-in transition-property :box-shadow, text-shadow;
+    transition-duration: 0.10s, 0.30s;
+    transition-timing-function: ease-in, ease-in;
+    behavior: url(/stylesheets/PIE.htc);
+}
+#analog_analytics .daily_deal .dashboard .dd_price {
+    color: #db2326;
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+#analog_analytics .daily_deal .dashboard .deal_start {
+    background: #8fcae4;
+    border-left: 1px solid #86b0c4;
+    border-top: 1px solid #86b0c4;
+    border-right: 1px solid #e5f7ff;
+    border-bottom: 1px solid #e5f7ff;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    width: 170px;
+    margin-bottom: 5px;
+}
+#analog_analytics .daily_deal .dashboard .number_sold {
+    text-align: center;
+}
+#analog_analytics .dashboard .dd_buy_box .dd_price_2 {
+    font-size: 23px !important;
+    margin-left: 11px;
+    margin-top: 11px;
+}
+#analog_analytics .dashboard .dd_buy_box .dd_price_3 {
+    font-size: 22px !important;
+    margin-left: 5px;
+    margin-top: 12px;
+}
+#analog_analytics .dashboard .dd_buy_box .dd_price_4 {
+    font-size: 21px !important;
+    margin-top: 13px;
+}
+#analog_analytics .dashboard .dd_buy_box .dd_price_5 {
+
+}
+#analog_analytics .dashboard .dd_buy_box .dd_price_6 {
+    font-size: 20px !important;
+    margin-left: -10px;
+    margin-top: 12px;
+}
+#analog_analytics .dashboard .dd_buy_box .dd_price_7 {
+    font-size: 18px !important;
+    margin-left: -10px;
+    margin-top: 11px;
+}
+#analog_analytics .dashboard .dd_buy_box .dd_price_8 {
+
+}
+#analog_analytics .dashboard .dd_buy_box .dd_price_9 {
+    font-size: 14px !important;
+    margin-left: -8px;
+    margin-top: 11px;
+}
+#analog_analytics .dd_buy_box .sold_out, #analog_analytics .dd_buy_box .deal_over {
+    color: #666666;
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+/*////////////////////// Application overrides ///////////////////////////////////*/
+
+div.row {
+    margin-bottom: 8px;
+}
+h1#logo a:hover {
+    background: white;
+    background: url(<%= asset_path 'wcax/assets/images/wrapper/nylogo.jpg' %>) no-repeat;
+}
+#analog_analytics #daily_deal .page_column_12 h3 {
+    color: #444444;
+    font-size: 16px;
+    font-weight: 900;
+    margin-top: 15px;
+}
+#analog_analytics #daily_deal .page_column_12 h5 {
+    color: #444444;
+    font-size: 16px;
+    font-weight: 900;
+    margin-top: 15px;
+}
+#analog_analytics #daily_deal a {
+    color: #FDCE1C;
+}
+#analog_analytics #daily_deal .contact_pages a, #analog_analytics #daily_deal .login a {
+    color: #333333;
+}
+#analog_analytics #daily_deal .fieldWithErrors {
+    text-align: left;
+}
+#analog_analytics #daily_deal .page_column_8 #consumer .fieldWithErrors, #analog_analytics #daily_deal #signup_form .fieldWithErrors {
+    text-align: right;
+}
+/*/////PURCHASE PAGE////////*/
+
+#analog_analytics #daily_deal .daily_deal_payment,
+#analog_analytics #daily_deal .confirm_payment{
+    width:880px;
+}
+#analog_analytics #daily_deal fieldset#mailing_address {
+    margin: 10px auto;
+}
+#analog_analytics #daily_deal fieldset#mailing_address div {
+    width: 550px;
+    float: left;
+}
+#analog_analytics #daily_deal fieldset#mailing_address input {
+    float: left;
+    margin-top: 6px;
+    width: 300px;
+    vertical-align: middle;
+}
+#analog_analytics #daily_deal fieldset#mailing_address label {
+    float: left;
+    margin-right: 10px;
+    text-align: right;
+    width: 188px;
+}
+#analog_analytics #daily_deal fieldset#mailing_address legend {
+    float: left;
+    font-weight: bold;
+    margin-left: 123px;
+}
+
+#analog_analytics #daily_deal #fulfillment_options .row div.label{
+   float: left;
+    line-height: 2em;
+    padding-right: 4px;
+    text-align: right;
+    vertical-align: middle;
+    width: 196px;
+}
+
+#analog_analytics #daily_deal #fulfillment_options .row div.input{
+        float: left;
+    line-height: 2em;
+    vertical-align: middle;
+    width: 300px;
+}
+#analog_analytics #daily_deal #fulfillment_options .row div.input-state{
+        float: left;
+    line-height: 2em;
+    vertical-align: middle;
+    width: 300px;
+    margin-top:5px;
+}
+
+#analog_analytics #daily_deal #fulfillment_options .row #daily_deal_purchase_mailing_address_attributes_state{
+    float:left;
+}
+
+#analog_analytics #daily_deal #session_warning{
+   padding:0px;
+   text-align:center;
+   width:610px;
+}
+
+/*/////LANDING PAGE////////*/
+body.landing_page {
+    background: #ffffff;
+}
+
+.landing_page #container {
+    background: none;
+}
+.landing_page #container #main{
+    padding:0px;
+    width:990px;
+}
+.landing_page .wrap {
+    background: none;
+    background-image: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.landing_page .landing_page_content {
+    display: block;
+    overflow: hidden;
+    margin: 0px auto;
+    margin-bottom: 30px;
+}
+.landing_page .landing_page_content .market_subscription_box {
+    background: #eeeeee;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    float: left;
+    margin-top: 53px;
+    padding: 15px;
+    width: 280px;
+    margin-left:6px;
+    margin-right:6px;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+.landing_page .market_subscription_box h2 {
+    background: none;
+    color: #333333;
+    font-size: 15px;
+    margin-bottom: 10px;
+    width:270px;
+}
+.landing_page .market_subscription_box h3 {
+    background: none;
+    font-size: 40px;
+    margin-top: -59px;
+    margin-bottom: 13px;
+    text-align: center;
+position: relative;
+    z-index:200;
+}
+
+@-moz-document url-prefix() {
+    .landing_page .market_subscription_box h3 {
+    margin-top: -61px;
+    }
+}
+
+.landing_page .market_subscription_box h4 {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.landing_page .market_subscription_box p {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    margin: 7px 0px;
+    display: block;
+}
+.landing_page .market_subscription_box .subscriber_email {
+    border: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #aaaaaa;
+    float: left;
+    font-size: 16px;
+    padding: 5px 0px 5px 10px;
+    position: relative;
+    width: 195px;
+    behavior: url(/stylesheets/PIE.htc);
+}
+.landing_page .market_subscription_box .sign_up_button {
+    background: #c41230;
+    border: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 5px;
+    padding: 6px;
+    position: relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+.landing_page .landing_page_content .landing_slider_box {
+    background: url(/themes/wcax/images/graphics/landing-slider-bg.png) repeat;
+    padding: 5px 10px 10px;
+    position: absolute;
+    width: 290px;
+    bottom: 0px;
+}
+.landing_page .landing_page_content .market_image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    height: 205px;
+    position: relative;
+    width: 280px;
+    overflow: hidden;
+    behavior: url(/stylesheets/PIE.htc);
+}
+.landing_page #landing_box_vermont {
+    background: #ff7b00;
+}
+.landing_page #landing_box_vermont h3 {
+    color: #ff7b00;
+}
+.landing_page #landing_box_adirondacks {
+    background: #ffd200;
+}
+
+.landing_page #landing_box_jumpaways {
+    background: #233d90;
+}
+
+.landing_page #landing_box_adirondacks h3 {
+    color: #ffd200;
+}
+.landing_page #landing_box_jumpaways h3 {
+    color: #233d90;
+}
+
+.landing_page #landing_box_vermont p {
+    text-shadow: 1px 1px 1px #d17001;
+    behavior: url(/stylesheets/PIE.htc);
+    position: relative;
+}
+.landing_page #landing_box_adirondacks p {
+    text-shadow: 1px 1px 1px #d3aa00;
+    behavior: url(/stylesheets/PIE.htc);
+    position: relative;
+}
+.landing_page .landing_page_content .vermont_market_background {
+    background: url('/themes/wcax/images/vermont-images/vermont-market-background-big.png') top left no-repeat;
+}
+.landing_page .landing_page_content .adirondacks_market_background {
+    background: url('/themes/wcax/images/adirondacks-images/adirondacks-market-background-big.png') top left no-repeat;
+}
+.landing_page .landing_page_content .jumpaways_market_background {
+    background: url('/themes/wcax/images/jumponit/jumpaways-market-background-big.png') top left no-repeat;
+}
+
+#analog_analytics .daily_deal_purchases_list th,
+#analog_analytics .daily_deal_purchases_list td {
+    padding-right: 12px;
+}
+
+#analog_analytics .daily_deal_purchases_list td.recipient,
+#analog_analytics .daily_deal_purchases_list td.purchased_on,
+#analog_analytics .daily_deal_purchases_list td.expires,
+#analog_analytics .daily_deal_purchases_list td.status {
+    white-space: nowrap;
+}
+open /* =Reset default browser CSS.
+-------------------------------------------------------------- */
+
+/*
+Based on work by Eric Meyer and html5doctor.com
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 99%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+@font-face {
+    font-family: 'GothamHTFRegular';
+    src: url('/fonts/gothamhtf-medium-webfont.eot');
+    src: url('/fonts/gothamhtf-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/gothamhtf-medium-webfont.woff') format('woff'),
+         url('/fonts/gothamhtf-medium-webfont.ttf') format('truetype'),
+         url('/fonts/gothamhtf-medium-webfont.svg#GothamHTFRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+a img {
+    border: 0;
+}
+
+
+/* =Structure
+----------------------------------------------- */
+
+/* Alignment */
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =Global
+----------------------------------------------- */
+
+body {
+    background: #eeebd5;
+        color: #5c707c;
+    font-size: 15px;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    line-height: 1.6em;
+}
+
+#container {
+    background: #eeebd5;
+    width: 1025px;
+    margin: 0 auto;
+}
+
+div.wrap {
+    width: 1019px;
+    background: #EEEBD5 url(<%= asset_path 'wcax/assets/images/graphics/groovepaper.png' %>) repeat;
+    box-shadow: 0 0 8px #7c764d;
+
+}
+
+.clear { clear: both; }
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+    clear: both;
+}
+hr {
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    margin-bottom: 1.5em;
+}
+
+/* Text elements */
+p {
+    line-height:125%;
+    margin-bottom: 1.5em;
+    margin-top:5px;
+}
+ul, ol {
+    margin: 0 0 1.5em 2.5em;
+}
+ul {
+    list-style: square;
+}
+ol {
+    list-style-type: decimal;
+}
+ol ol {
+    list-style: upper-alpha;
+}
+ol ol ol {
+    list-style: lower-roman;
+}
+ol ol ol ol {
+    list-style: lower-alpha;
+}
+ul ul, ol ol, ul ol, ol ul {
+    margin-bottom: 0;
+}
+dl {
+    margin: 0 1.5em;
+}
+dt {
+    font-weight: bold;
+}
+dd {
+    margin-bottom: 1.5em;
+}
+strong {
+    font-weight: bold;
+}
+cite, em, i {
+    font-style: italic;
+}
+blockquote {
+    font-style: italic;
+    margin: 0 3em;
+}
+blockquote em, blockquote i, blockquote cite {
+    font-style: normal;
+}
+pre {
+    background: #f4f4f4;
+    font: 13px "Courier 10 Pitch",Courier,monospace;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+    padding: 0.75em 1.5em;
+}
+code, kbd {
+    font: 13px Monaco,Consolas,"Andale Mono","DejaVu Sans Mono",monospace;
+}
+abbr, acronym {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+}
+ins {
+    background: #fff9c0;
+    text-decoration: none;
+}
+sup,
+sub {
+    font-size: 10px;
+    height: 0;
+    line-height: 1;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    bottom: 1ex;
+}
+sub {
+    top: .5ex;
+}
+
+
+/* Links */
+a {
+    color:#004b91;
+}
+a:visited {
+    color: #333;
+}
+a:focus,
+a:active,
+a:hover {
+    color: #ff4b33;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+/* =Header
+----------------------------------------------- */
+#header {
+    position: relative;
+    padding-top: 80px;
+}
+
+#logo {
+    background: url('/themes/wcax/images/graphics/logo-new.png') no-repeat;
+    width: 432px;
+    height: 157px;
+    position: absolute;
+    top: 11px;
+    left: 32px;
+    z-index: 9;
+}
+
+#logo a {
+    display: block;
+    width: 360px;
+    height: 130px;
+    text-indent: -9999px;
+}
+
+#nav {
+    height: 37px;
+    position: relative;
+    z-index: 5;
+}
+
+#nav ul {
+    background: #000000;
+    height:27px;
+    float: right;
+    padding: 10px 50px 0 35px;
+    width:555px;
+}
+
+.black_block{
+    
+    background:#000000;
+    width:17px;
+    height:37px;
+}
+
+#nav li {
+    background: url(<%= asset_path 'wcax/assets/images/jumponit/sep_nav.png' %>) left 2px no-repeat;
+    float: left;
+    font-size: 15px;
+    list-style: none;
+    text-transform: uppercase;
+    padding-left: 16px;
+    margin-left: 15px;
+    line-height: normal;
+}
+
+#nav li:first-child { background: none; }
+
+#nav li a {
+    color: #fffefe;
+    text-decoration: none;
+    background: none;
+}
+
+#nav li a:hover,
+#nav li.active a {
+    color: #c41230;
+}
+
+
+.ribbon {
+    background: url(<%= asset_path 'wcax/assets/images/jumponit/ribbon.png' %>) no-repeat;
+    width: 18px;
+    height: 65px;
+    position: absolute;
+    
+}
+.ribbon-topleft {
+    background-position: left top;
+    left: -18px;
+    top: 0;
+}
+.ribbon-topright {
+    background-position: right top;
+    width: 17px;
+    right: -17px;
+    top: 0;
+}
+
+.ribbon-bottomleft {
+    background-position: left bottom;
+    left: -18px;
+    bottom: 0;
+}
+.ribbon-bottomright {
+    background-position: right bottom;
+    width: 17px;
+    right: -17px;
+    bottom: 0;
+}
+
+/* =Home
+----------------------------------------------- */
+#main {
+    padding: 15px 30px 6px 46px;
+}
+
+#home-top {
+    padding: 11px 9px 0 9px;
+}
+
+#home-bottom {
+    padding-top: 11px;
+}
+.home-box {
+    width: 271px;
+    height: 271px;
+    float: left;
+    margin-right: 46px;
+    margin-bottom: 20px;
+    color: #000000;
+    line-height: 1.33em;
+    position: relative;
+}
+
+.home-box p {
+    margin-bottom: 11px;
+}
+
+/*.email-box {
+    background: url('/themes/wcax/images/jumponit/bg_inputbox.png') no-repeat;
+    border: 0px;
+    color: #5c707c;
+    font-size: 12px;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    width: 206px;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 14px;
+    padding-bottom: 12px;
+}*/
+
+/*.submit-box {
+    background: url('/themes/wcax/images/jumponit/bg_signup.png') no-repeat;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 129px;
+    height: 31px;
+    color: #fff;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 17px;
+    bottom: 17px;
+    cursor: pointer;
+}*/
+
+#vermont-box {
+    
+}
+
+#montreal-box {
+    
+}
+
+#sevendays-box {
+    
+    margin-right: 0;
+}
+
+.box-inner {
+    padding: 10px 17px 10px;
+}
+
+h3.box-title {
+    text-transform: uppercase;
+    line-height: normal;
+    color: #fffefe;
+    font-size: 35px;
+    font-family: 'GothamHTFRegular', Gotham HTF, Verdana, Arial, sans-serif;
+    font-weight: normal;
+    padding-bottom: 3px;
+}
+
+#home-socials {
+    float: right;
+    padding: 19px 19px 0;
+}
+
+#home-socials img {
+    margin-left: 23px;
+}
+
+
+/* =Footer
+----------------------------------------------- */
+#footer {
+    padding-bottom: 50px;
+}
+#footer-bar {
+    background: #000000;
+    height: 37px;
+    position: relative;
+    color: #ffffff;
+    font-size: 11px;
+}
+
+#footer-nav {
+    width: 400px;
+    float: left;
+    padding: 12px 0 0 15px;
+}
+
+#footer-nav li {
+    background: url(<%= asset_path 'wcax/assets/images/jumponit/sep_footernav.png' %>) left 8px no-repeat;
+    float: left;
+    list-style: none;
+    padding: 0 11px 0 12px;
+}
+
+#footer-nav li:first-child { background: none; }
+
+#footer-nav li a {
+    color: #fffefe;
+    text-decoration: none;
+    background: none;
+}
+
+#footer-nav li a:hover,
+#footer-nav li.active a {
+    color: #c41230;
+}
+
+#footer-copyright {
+    float: right;
+    width: 400px;
+    text-align: right;
+    padding: 12px 46px 0 0;
+}
+
+/* =Attachments
+----------------------------------------------- */
+
+
+/* =Images
+----------------------------------------------- */
+
+a img {
+    border: none;
+}
+p img {
+    margin-bottom: 0.5em; /* a small bottom margin prevents content floating under images */
+}
+/*
+Resize images to fit the main content area.
+- Applies only to images uploaded via WordPress by targeting size-* classes.
+- Other images will be left alone. Use "size-auto" class to apply to other images.
+*/
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img,
+.widget-area img {
+    max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+    height: auto; /* Override height to match resized width for correct aspect ratio. */
+}
+img.alignleft {
+    margin-right: 1.5em;
+}
+img.alignright {
+    margin-left: 1.5em;
+}
+.wp-caption {
+    padding: .5em;
+    text-align: center;
+}
+.wp-caption img {
+    margin: .25em;
+}
+.wp-caption .wp-caption-text {
+    margin: .5em;
+}
+.gallery-caption {
+}
+.wp-smiley {
+    margin: 0;
+}
+#logo {
+    background: url(<%= asset_path 'wcax/assets/images/vermont-images/vermont-logo-header.png' %>) no-repeat scroll 0 0 transparent;
+    height: 157px;
+    left: 32px;
+    position: absolute;
+    top: 11px;
+    width: 432px;
+    z-index: 9;
+}
+
+#analog_analytics #daily_deal #daily_deal_right_rail h4 {
+    color: #F68026;
+}
+
+#analog_analytics #daily_deal #daily_deal_right_rail .facebook_likebox {
+    border: 1px solid #F68026;
+}
+
+#subscribe_box_wrapper #subscribe_box #subscribe_form .sign_up {
+    background: none repeat scroll 0 0 #F68026;
+    border: medium none;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 900;
+    height: 26px;
+    margin-right: 5px;
+    padding: 5px;
+    text-shadow: 0 0 3px #888888;
+}
+
+#analog_analytics #daily_deal_content_box .dd_left_panel #dd_buy_box {
+    background: url(<%= asset_path 'wcax/assets/images/vermont-images/vermont-ribbon.png' %>) no-repeat scroll 0 0 transparent;
+}
+#analog_analytics #daily_deal .dd_buy_box .dd_price,
+#analog_analytics #daily_deal_content_box #dd_buy_box #dd_price {
+    color: #FFFFFF;
+    float: left;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-shadow: 1px 1px 4px #555555;
+        position:relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+
+#analog_analytics #daily_deal_content_box #sold_out{
+    color: #444444;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#analog_analytics #daily_deal_content_box #deal_over {
+    color: #444444;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 9px;
+}
+
+/*#analog_analytics #daily_deal_content_box #buy_now .unavailable {
+    color: #444444;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 95%;
+    margin-top: -10px;
+    text-align: center;
+    width: 155px;
+}*/
+
+#analog_analytics #daily_deal a {
+    color:#F68026;
+}
+
+#analog_analytics #daily_deal .contact_us_page a,
+#analog_analytics #daily_deal .login a{
+    color:#F68026;  
+}
+
+#analog_analytics #daily_deal #daily_deal_content_box .daily_deal .deal_details .button {
+    background: #F68026;
+    -pie-background: #F68026;
+    color:#ffffff;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 5px 25px;
+    behavior: url(/stylesheets/PIE.htc);
+    position:relative;
+}
+
+#analog_analytics .daily_deal .dashboard .dd_buy_box {
+    background: url("/themes/wcax/images/vermont-images/vermont-ribbon-alldeals.png") no-repeat;
+}
+#logo {
+    background: url(<%= asset_path 'wcax/assets/images/vermont-images/vermont-logo-header.png' %>) no-repeat scroll 0 0 transparent;
+    height: 157px;
+    left: 32px;
+    position: absolute;
+    top: 11px;
+    width: 432px;
+    z-index: 9;
+}
+
+#analog_analytics #daily_deal #daily_deal_right_rail h4 {
+    color: #F68026;
+}
+
+#analog_analytics #daily_deal #daily_deal_right_rail .facebook_likebox {
+    border: 1px solid #F68026;
+}
+
+#subscribe_box_wrapper #subscribe_box #subscribe_form .sign_up {
+    background: none repeat scroll 0 0 #F68026;
+    border: medium none;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 900;
+    height: 26px;
+    margin-right: 5px;
+    padding: 5px;
+    text-shadow: 0 0 3px #888888;
+}
+
+#analog_analytics #daily_deal_content_box .dd_left_panel #dd_buy_box {
+    background: url(<%= asset_path 'wcax/assets/images/vermont-images/vermont-ribbon.png' %>) no-repeat scroll 0 0 transparent;
+}
+#analog_analytics #daily_deal .dd_buy_box .dd_price,
+#analog_analytics #daily_deal_content_box #dd_buy_box #dd_price {
+    color: #FFFFFF;
+    float: left;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-shadow: 1px 1px 4px #555555;
+        position:relative;
+    behavior: url(/stylesheets/PIE.htc);
+}
+
+#analog_analytics #daily_deal_content_box #sold_out{
+    color: #444444;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#analog_analytics #daily_deal_content_box #deal_over {
+    color: #444444;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 9px;
+}
+
+/*#analog_analytics #daily_deal_content_box #buy_now .unavailable {
+    color: #444444;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 95%;
+    margin-top: -10px;
+    text-align: center;
+    width: 155px;
+}*/
+
+#analog_analytics #daily_deal a {
+    color:#F68026;
+}
+
+#analog_analytics #daily_deal .contact_us_page a,
+#analog_analytics #daily_deal .login a{
+    color:#F68026;  
+}
+
+#analog_analytics #daily_deal #daily_deal_content_box .daily_deal .deal_details .button {
+    background: #F68026;
+    -pie-background: #F68026;
+    color:#ffffff;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 5px 25px;
+    behavior: url(/stylesheets/PIE.htc);
+    position:relative;
+}
+
+#analog_analytics .daily_deal .dashboard .dd_buy_box {
+    background: url("/themes/wcax/images/vermont-images/vermont-ribbon-alldeals.png") no-repeat;
+}
