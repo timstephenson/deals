@@ -1,6 +1,9 @@
 class Deal < ActiveRecord::Base
   belongs_to :advertiser
   
+  delegate :publisher, to: :advertiser, prefix: true
+  delegate :name, to: :advertiser_publisher, prefix: true
+  
   # Scopes ===========================================================================
   scope :with_advertisers, includes([:advertiser => [:publisher]])
   

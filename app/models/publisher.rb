@@ -12,4 +12,10 @@ class Publisher < ActiveRecord::Base
     end
     true
   end
+  
+  def entertainment_or_default_theme
+    unless self.theme.blank?
+      self.theme.downcase.include?("entertainment") ? "entertainment" : self.theme
+    end
+  end
 end
