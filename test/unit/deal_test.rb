@@ -1,4 +1,5 @@
 require 'test_helper'
+require 'timecop'
 
 class DealTest < ActiveSupport::TestCase
   test "factory should be sane" do
@@ -7,9 +8,10 @@ class DealTest < ActiveSupport::TestCase
 
   # I think this is a bad test and it fails sometimes
   test "over should honor current time" do
-  	deal = FactoryGirl.create(:deal, :end_at => Time.zone.now + 0.01)
+    Timecop.travel(Time.local(2012, 1, 15, 10, 0, 0))
+  	deal = FactoryGirl.create(:deal, :end_at => Time.zone.now + 1.day)
   	assert !deal.over?, "Deal should not be over"
-  	sleep 1
+  	Timecop.travel(Time.local(2012, 1, 16, 12, 0, 0))
   	assert deal.over?, "Deal should be over"
   end
   
