@@ -18,7 +18,7 @@ class TransporterTest < ActiveSupport::TestCase
   test "should create a deal for each advertiser" do
     @transporter.transport_to_publisher(@publisher) 
     @publisher.advertisers.each do |advertiser|
-      assert advertiser.deals.length == 1, "Should create a deal for #{advertiser.name}"
+      assert advertiser.deals.first.valid?, "Should create a valid deal for #{advertiser.name}"
     end
   end
   
